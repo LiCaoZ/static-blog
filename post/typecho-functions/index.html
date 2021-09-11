@@ -1,0 +1,359 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>整理一下Typecho的一些函数 | 李某的小栈</title>
+<link rel="shortcut icon" href="https://www.liczhi.com/favicon.ico?v=1631379729175">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.liczhi.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="整理一下Typecho的一些函数 | 李某的小栈 - Atom Feed" href="https://www.liczhi.com/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="网上收集的一些Typecho函数，希望在需要时能用得上~
+
+站点名称
+&lt;?php $this-&gt;options-&gt;title() ?&gt;
+
+站点网址
+&lt;?php $this-&gt;options -&gt;si..." />
+    <meta name="keywords" content="Typecho" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://www.liczhi.com">
+  <img class="avatar" src="https://www.liczhi.com/images/avatar.png?v=1631379729175" alt="">
+  </a>
+  <h1 class="site-title">
+    李某的小栈
+  </h1>
+  <p class="site-description">
+    一只辣鸡李某的小破站
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/SHIERTX" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/n/SHIERTX" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              整理一下Typecho的一些函数
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-08-20
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+                <a href="https://www.liczhi.com/tag/typecho/" class="post-tag">
+                  # Typecho
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>网上收集的一些Typecho函数，希望在需要时能用得上~</p>
+<!--more-->
+<p>站点名称</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;title() ?&gt;
+</code></pre>
+<p>站点网址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options -&gt;siteUrl(); ?&gt;
+</code></pre>
+<p>标题</p>
+<pre><code class="language-php">&lt;?php $this -&gt;options-&gt;title(); ?&gt;
+</code></pre>
+<p>站点说明</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;description() ?&gt;
+</code></pre>
+<p>模板文件的文件夹地址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;themeUrl(); ?&gt;
+</code></pre>
+<p>文章或页面的作者</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author(); ?&gt;
+</code></pre>
+<p>作者头像</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;gravatar('640') ?&gt;
+</code></pre>
+<p>此处640是图片的边长，输出的是一个图片</p>
+<p>该文章作者的全部文章列表链接</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;permalink (); ?&gt;
+</code></pre>
+<p>该文作者个人主页链接</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;url(); ?&gt;
+</code></pre>
+<p>该文作者的邮箱地址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;mail(); ?&gt;
+</code></pre>
+<p>上一篇、下一篇</p>
+<pre><code class="language-php">&lt;?php $this-&gt;thePrev(); ?&gt; &lt;?php $this-&gt;theNext(); ?&gt;
+</code></pre>
+<p>判断是否是首页，输出相关内容(可用性存疑)</p>
+<pre><code class="language-php">&lt;?php if ($this-&gt;is('index')): ?&gt;
+//首页输出内容
+&lt;?php else: ?&gt;
+//不是首页输出内容
+&lt;?php endif; ?&gt;
+</code></pre>
+<p>文章或页面评论数目</p>
+<pre><code class="language-php">&lt;?php $this-&gt;commentsNum('这里空空如也', '仅有一条评论' , '%d 条评论'); ?&gt;
+</code></pre>
+<p>截取部分文章（大部分用于首页每篇文章显示摘要），350是字数</p>
+<pre><code class="language-php">&lt;?php $this-&gt;excerpt(350, '.. .'); ?&gt;
+</code></pre>
+<p>调用自定义字段</p>
+<pre><code class="language-php">&lt;?php $this-&gt;fields-&gt;自定义字段名 ?&gt;
+</code></pre>
+<p>站点RSS地址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;feedUrl(); ?&gt;
+</code></pre>
+<p>获取最新文章</p>
+<pre><code class="language-php">&lt;?php $this-&gt;widget('Widget_Contents_Post_Recent', 'pageSize=8&amp;type=category')-&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot;&gt;{title}&lt;/a&gt;&lt;/li&gt;'); ?&gt;
+</code></pre>
+<p>纯文字分类名称，不带链接</p>
+<pre><code class="language-php">&lt;?php $this-&gt;category(',', false); ?&gt;
+</code></pre>
+<p>获取文章分类列表</p>
+<pre><code class="language-php">&lt;ul&gt;
+&lt;?php $this-&gt;widget('Widget_Metas_Category_List')
+                -&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot;&gt;{name}&lt;/a&gt; ({count})&lt;/li&gt;'); ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取某分类的文章</p>
+<pre><code class="language-php">&lt;ul&gt;
+&lt;?php 
+$this-&gt;widget('Widget_Archive@indexyc', 'pageSize=8&amp;type=category', 'mid=1')
+-&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot; title=&quot;{title}&quot;&gt;{title}&lt;/a&gt;&lt;/li&gt;'); ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取最新评论列表</p>
+<pre><code class="language-php">&lt;ul&gt;
+    &lt;?php $this-&gt;widget('Widget_Comments_Recent')-&gt;to($comments); ?&gt;
+    &lt;?php while($comments-&gt;next()): ?&gt;
+        &lt;li&gt;&lt;a href=&quot;&lt;?php $comments-&gt;permalink(); ?&gt;&quot;&gt;&lt;?php $comments-&gt;author(false); ?&gt;&lt;/a&gt;: &lt;?php $comments-&gt;excerpt(50, '...'); ?&gt;&lt;/li&gt;
+    &lt;?php endwhile; ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取最新文章</p>
+<pre><code class="language-php">&lt;?php while ($this-&gt;next()): ?&gt;
+&lt;?php if ($this-&gt;sequence &lt;= 3): ?&gt;
+html
+&lt;?php endif; ?&gt;
+&lt;?php endwhile; ?&gt;
+</code></pre>
+<p>获取最新访客评论</p>
+<pre><code class="language-php">&lt;?php $this-&gt;widget('Widget_Comments_Recent','ignoreAuthor=true')-&gt;to($comments); ?&gt;
+    &lt;?php while($comments-&gt;next()): ?&gt;
+    &lt;li&gt;&lt;a href=&quot;&lt;?php $comments-&gt;permalink(); ?&gt;&quot;&gt;&lt;?php $comments-&gt;author(false); ?&gt;&lt;/a&gt;: &lt;?php $comments-&gt;excerpt(50, '...'); ?&gt;&lt;/li&gt;
+&lt;?php endwhile; ?&gt;
+</code></pre>
+<p>获取文章时间归档</p>
+<pre><code class="language-php">&lt;ul&gt;
+    &lt;?php $this-&gt;widget('Widget_Contents_Post_Date', 'type=month&amp;format=F Y')
+                -&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot;&gt;{date}&lt;/a&gt;&lt;/li&gt;'); ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取标签云</p>
+<pre><code class="language-php">&lt;?php $this-&gt;widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&amp;limit=28')-&gt;to($tags); ?&gt;
+&lt;?php while($tags-&gt;next()): ?&gt;
+&lt;a href=&quot;&lt;?php $tags-&gt;permalink(); ?&gt;&quot; class=&quot;size-&lt;?php $tags-&gt;split(5, 10, 20, 30); ?&gt;&quot;&gt;&lt;?php $tags-&gt;name(); ?&gt;&lt;/a&gt;
+&lt;?php endwhile; ?&gt;
+</code></pre>
+<p>调用该文相关文章列表</p>
+<pre><code class="language-php">&lt;?php $this-&gt;related(5)-&gt;to($relatedPosts); ?&gt;
+    &lt;?php if ($relatedPosts-&gt;have()): ?&gt;    //这句也可以写成 if (count($relatedPosts-&gt;stack))
+    &lt;?php while ($relatedPosts-&gt;next()): ?&gt;
+        &lt;li&gt;&lt;a href=&quot;&lt;?php $relatedPosts-&gt;permalink(); ?&gt;&quot; title=&quot;&lt;?php $relatedPosts-&gt;title(); ?&gt;&quot;&gt;&lt;?php $relatedPosts-&gt;title(); ?&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;?php endwhile; ?&gt;
+    &lt;?php else : ?&gt;
+        &lt;li&gt;无相关文章&lt;/li&gt;
+    &lt;?php endif; ?&gt;
+</code></pre>
+<p>隐藏HEAD内的程序版本和模板名称</p>
+<pre><code class="language-php">&lt;?php $this-&gt;header(&quot;generator=&amp;template=&quot;); ?&gt;
+</code></pre>
+<p>获取读者墙</p>
+<pre><code class="language-php">&lt;?php
+$period = time() - 999592000; // 時段: 30 天, 單位: 秒
+$counts = Typecho_Db::get()-&gt;fetchAll(Typecho_Db::get()
+-&gt;select('COUNT(author) AS cnt','author', 'url', 'mail')
+-&gt;from('table.comments')
+-&gt;where('created &gt; ?', $period )
+-&gt;where('status = ?', 'approved')
+-&gt;where('type = ?', 'comment')
+-&gt;where('authorId = ?', '0')
+-&gt;group('author')
+-&gt;order('cnt', Typecho_Db::SORT_DESC)
+-&gt;limit(25)
+);
+$mostactive = '';
+$avatar_path = 'http://www.gravatar.com/avatar/';
+foreach ($counts as $count) {
+  $avatar = $avatar_path . md5(strtolower($count['mail'])) . '.jpg';
+  $c_url = $count['url']; if ( !$c_url ) $c_url = Helper::options()-&gt;siteUrl;
+  $mostactive .= &quot;&lt;a href='&quot; . $c_url . &quot;' title='&quot; . $count['author'] . &quot; (参与&quot; . $count['cnt'] . &quot;次互动)' target='_blank'&gt;&lt;img src='&quot; . $avatar . &quot;' alt='&quot; . $count['author'] . &quot;的头像' class='avatar' width='32' height='32' /&gt;&lt;/a&gt;\n&quot;;
+}
+echo $mostactive; ?&gt;
+</code></pre>
+<p>登录与游客显示不同内容</p>
+<pre><code class="language-php">&lt;?php if($this-&gt;user-&gt;hasLogin()): ?&gt;
+登录可见
+&lt;?php else: ?&gt;
+游客与登录均可见
+&lt;?php endif; ?&gt;
+</code></pre>
+<p>部分内容来源：<a href="https://developer.aliyun.com/article/44707">云栖社区</a>,版权归原作者所有,若有侵权请联系删除。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://www.liczhi.com/post/restart/">
+              <h3 class="post-title">
+                新的开始
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'ae32abeb35afeb8f4f44',
+    clientSecret: 'd1e4268cb41716554ef9d6ae056264f7ed74b96e',
+    repo: 'static-blog',
+    owner: 'SHIERTX',
+    admin: ['SHIERTX'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电
+  <a class="rss" href="https://www.liczhi.com/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

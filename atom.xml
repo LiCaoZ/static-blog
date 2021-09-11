@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.liczhi.com</id>
     <title>李某的小栈</title>
-    <updated>2021-09-11T16:36:32.213Z</updated>
+    <updated>2021-09-11T17:12:20.598Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.liczhi.com"/>
     <link rel="self" href="https://www.liczhi.com/atom.xml"/>
@@ -10,6 +10,219 @@
     <logo>https://www.liczhi.com/images/avatar.png</logo>
     <icon>https://www.liczhi.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 李某的小栈</rights>
+    <entry>
+        <title type="html"><![CDATA[如何完成在微信对公交卡的充值和线下圈存]]></title>
+        <id>https://www.liczhi.com/post/how-to-recharge-bus-card-online/</id>
+        <link href="https://www.liczhi.com/post/how-to-recharge-bus-card-online/">
+        </link>
+        <updated>2020-08-28T04:31:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>其实合川区的公交卡早就可以线上充值线下圈存了，但貌似很多同志不知道到底如何操作，故写此文。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>其实合川区的公交卡早就可以线上充值线下圈存了，但貌似很多同志不知道到底如何操作，故写此文。</p>
+<!--more-->
+<p>在合川，可以线上充值公交卡早已不是件新鲜事；最早可追溯到的报道是2019年4月24日今日合川网的<a href="http://www.jrhcw.com/html/2019-04/24/content_50420631.htm">合川这20个公交站可充值IC卡 你学会了吗？</a></p>
+<p>在报道中提到的可圈存公交站有以下几个：</p>
+<pre><code class="language-text">北城有瑞山路站、合州医院站、合川中学站、移通学院站、义乌小商品市场站、嘉陵路站、党校站、蟠龙花园站、杨柳街站、鹿角栅站、交通街站；南城有区政府站、南景豪爵站、南屏路站、合阳中学站、中什字站、中医院站、安太花园站、金鹿花园站。预计还会在城区铺设更多的圈存设备，目前还在进一步的规划中。
+</code></pre>
+<p>公交站台上已有较为详细的教程，此文章将更详细的说明。</p>
+<p>下面我就来详细介绍一下如何充值、圈存。</p>
+<p>首先，打开微信，点击首页右上角放大镜图标。</p>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/09/15/uxwRdpZKTsNYvSl.jpg" alt="微信首页图" loading="lazy"></figure>
+<p>点击后，选择搜索指定内容-公众号</p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2020/09/15/KiaqUBZGuOcpXMD.jpg" alt="搜索指定内容" loading="lazy"></figure>
+<p>输入 <code>交运通</code> 三字，轻点键盘回车键。</p>
+<figure data-type="image" tabindex="3"><img src="https://i.loli.net/2020/09/15/raYMpR76f914wNg.jpg" alt="交运通" loading="lazy"></figure>
+<p>结果第一个便是啦~</p>
+<blockquote>
+<p>现在服务号已经更名为 交运通卡 啦</p>
+</blockquote>
+<p>新版微信可直接点击下方的在线充值，老版本微信请轻点卡片，进入公众号主页后点击在线充值，再点最上方的选项。</p>
+<figure data-type="image" tabindex="4"><img src="https://i.loli.net/2020/09/15/IJmtH29Eah7C4FQ.jpg" alt="公众号主页-在线充值" loading="lazy"></figure>
+<p>首次进入，需绑定IC卡，输入公交卡正面右上角数字与下方的验证码即可。</p>
+<p>绑定完成后，大概是这样的(因为我是学生，所以是学生卡啦；卡号为什么这么多0？我也不知道~)</p>
+<figure data-type="image" tabindex="5"><img src="https://i.loli.net/2020/09/11/B6x5rACsmMIUXGN.jpg" alt="绑定完成截图" loading="lazy"></figure>
+<p>点击您要充值的卡片右边的&quot;在线充值&quot;按钮，即可进入在线充值页面。</p>
+<figure data-type="image" tabindex="6"><img src="https://i.loli.net/2020/09/15/XVjlf4FuQhtDMZE.jpg" alt="在线充值" loading="lazy"></figure>
+<p>进入此页面后，会显示您的卡类别、卡号与卡内余额（余额显示并非实时，但基本上是准确的）。</p>
+<p>点选金额（或输入任意整数金额（可为1，但…拿来学生卡救急不错））后，点击下方的<code>立即支付</code>按钮，按照正常微信支付流程进行即可~</p>
+<p>支付完成后，资金会进入待圈存状态，您可点击充值页面的 最近支付记录 查看近期圈存成功的线上充值订单。</p>
+<figure data-type="image" tabindex="7"><img src="https://i.loli.net/2020/09/16/l2bMVPezogB5LTI.jpg" alt="最近支付记录" loading="lazy"></figure>
+<p>您需前往文章开头提到的任意一个公交站（一般位于站牌正面最右方）进行圈存，充值流程才算结束。（行外人说一个自己对圈存的理解：如果不圈存，卡内是充值前的金额，云端是充值后的金额，直接刷卡会报错（吧？），所以需要圈存将充值金额写入公交卡才和云端数据相吻合。也许5G普及后的某天，可以实现刷卡时同时写入云端金额。</p>
+<figure data-type="image" tabindex="8"><img src="/end.png" alt="END" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[整理一下Typecho的一些函数]]></title>
+        <id>https://www.liczhi.com/post/typecho-functions/</id>
+        <link href="https://www.liczhi.com/post/typecho-functions/">
+        </link>
+        <updated>2020-08-19T16:53:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>网上收集的一些Typecho函数，希望在需要时能用得上~</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>网上收集的一些Typecho函数，希望在需要时能用得上~</p>
+<!--more-->
+<p>站点名称</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;title() ?&gt;
+</code></pre>
+<p>站点网址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options -&gt;siteUrl(); ?&gt;
+</code></pre>
+<p>标题</p>
+<pre><code class="language-php">&lt;?php $this -&gt;options-&gt;title(); ?&gt;
+</code></pre>
+<p>站点说明</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;description() ?&gt;
+</code></pre>
+<p>模板文件的文件夹地址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;themeUrl(); ?&gt;
+</code></pre>
+<p>文章或页面的作者</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author(); ?&gt;
+</code></pre>
+<p>作者头像</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;gravatar('640') ?&gt;
+</code></pre>
+<p>此处640是图片的边长，输出的是一个图片</p>
+<p>该文章作者的全部文章列表链接</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;permalink (); ?&gt;
+</code></pre>
+<p>该文作者个人主页链接</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;url(); ?&gt;
+</code></pre>
+<p>该文作者的邮箱地址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;author-&gt;mail(); ?&gt;
+</code></pre>
+<p>上一篇、下一篇</p>
+<pre><code class="language-php">&lt;?php $this-&gt;thePrev(); ?&gt; &lt;?php $this-&gt;theNext(); ?&gt;
+</code></pre>
+<p>判断是否是首页，输出相关内容(可用性存疑)</p>
+<pre><code class="language-php">&lt;?php if ($this-&gt;is('index')): ?&gt;
+//首页输出内容
+&lt;?php else: ?&gt;
+//不是首页输出内容
+&lt;?php endif; ?&gt;
+</code></pre>
+<p>文章或页面评论数目</p>
+<pre><code class="language-php">&lt;?php $this-&gt;commentsNum('这里空空如也', '仅有一条评论' , '%d 条评论'); ?&gt;
+</code></pre>
+<p>截取部分文章（大部分用于首页每篇文章显示摘要），350是字数</p>
+<pre><code class="language-php">&lt;?php $this-&gt;excerpt(350, '.. .'); ?&gt;
+</code></pre>
+<p>调用自定义字段</p>
+<pre><code class="language-php">&lt;?php $this-&gt;fields-&gt;自定义字段名 ?&gt;
+</code></pre>
+<p>站点RSS地址</p>
+<pre><code class="language-php">&lt;?php $this-&gt;options-&gt;feedUrl(); ?&gt;
+</code></pre>
+<p>获取最新文章</p>
+<pre><code class="language-php">&lt;?php $this-&gt;widget('Widget_Contents_Post_Recent', 'pageSize=8&amp;type=category')-&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot;&gt;{title}&lt;/a&gt;&lt;/li&gt;'); ?&gt;
+</code></pre>
+<p>纯文字分类名称，不带链接</p>
+<pre><code class="language-php">&lt;?php $this-&gt;category(',', false); ?&gt;
+</code></pre>
+<p>获取文章分类列表</p>
+<pre><code class="language-php">&lt;ul&gt;
+&lt;?php $this-&gt;widget('Widget_Metas_Category_List')
+                -&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot;&gt;{name}&lt;/a&gt; ({count})&lt;/li&gt;'); ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取某分类的文章</p>
+<pre><code class="language-php">&lt;ul&gt;
+&lt;?php 
+$this-&gt;widget('Widget_Archive@indexyc', 'pageSize=8&amp;type=category', 'mid=1')
+-&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot; title=&quot;{title}&quot;&gt;{title}&lt;/a&gt;&lt;/li&gt;'); ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取最新评论列表</p>
+<pre><code class="language-php">&lt;ul&gt;
+    &lt;?php $this-&gt;widget('Widget_Comments_Recent')-&gt;to($comments); ?&gt;
+    &lt;?php while($comments-&gt;next()): ?&gt;
+        &lt;li&gt;&lt;a href=&quot;&lt;?php $comments-&gt;permalink(); ?&gt;&quot;&gt;&lt;?php $comments-&gt;author(false); ?&gt;&lt;/a&gt;: &lt;?php $comments-&gt;excerpt(50, '...'); ?&gt;&lt;/li&gt;
+    &lt;?php endwhile; ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取最新文章</p>
+<pre><code class="language-php">&lt;?php while ($this-&gt;next()): ?&gt;
+&lt;?php if ($this-&gt;sequence &lt;= 3): ?&gt;
+html
+&lt;?php endif; ?&gt;
+&lt;?php endwhile; ?&gt;
+</code></pre>
+<p>获取最新访客评论</p>
+<pre><code class="language-php">&lt;?php $this-&gt;widget('Widget_Comments_Recent','ignoreAuthor=true')-&gt;to($comments); ?&gt;
+    &lt;?php while($comments-&gt;next()): ?&gt;
+    &lt;li&gt;&lt;a href=&quot;&lt;?php $comments-&gt;permalink(); ?&gt;&quot;&gt;&lt;?php $comments-&gt;author(false); ?&gt;&lt;/a&gt;: &lt;?php $comments-&gt;excerpt(50, '...'); ?&gt;&lt;/li&gt;
+&lt;?php endwhile; ?&gt;
+</code></pre>
+<p>获取文章时间归档</p>
+<pre><code class="language-php">&lt;ul&gt;
+    &lt;?php $this-&gt;widget('Widget_Contents_Post_Date', 'type=month&amp;format=F Y')
+                -&gt;parse('&lt;li&gt;&lt;a href=&quot;{permalink}&quot;&gt;{date}&lt;/a&gt;&lt;/li&gt;'); ?&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>获取标签云</p>
+<pre><code class="language-php">&lt;?php $this-&gt;widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&amp;limit=28')-&gt;to($tags); ?&gt;
+&lt;?php while($tags-&gt;next()): ?&gt;
+&lt;a href=&quot;&lt;?php $tags-&gt;permalink(); ?&gt;&quot; class=&quot;size-&lt;?php $tags-&gt;split(5, 10, 20, 30); ?&gt;&quot;&gt;&lt;?php $tags-&gt;name(); ?&gt;&lt;/a&gt;
+&lt;?php endwhile; ?&gt;
+</code></pre>
+<p>调用该文相关文章列表</p>
+<pre><code class="language-php">&lt;?php $this-&gt;related(5)-&gt;to($relatedPosts); ?&gt;
+    &lt;?php if ($relatedPosts-&gt;have()): ?&gt;    //这句也可以写成 if (count($relatedPosts-&gt;stack))
+    &lt;?php while ($relatedPosts-&gt;next()): ?&gt;
+        &lt;li&gt;&lt;a href=&quot;&lt;?php $relatedPosts-&gt;permalink(); ?&gt;&quot; title=&quot;&lt;?php $relatedPosts-&gt;title(); ?&gt;&quot;&gt;&lt;?php $relatedPosts-&gt;title(); ?&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;?php endwhile; ?&gt;
+    &lt;?php else : ?&gt;
+        &lt;li&gt;无相关文章&lt;/li&gt;
+    &lt;?php endif; ?&gt;
+</code></pre>
+<p>隐藏HEAD内的程序版本和模板名称</p>
+<pre><code class="language-php">&lt;?php $this-&gt;header(&quot;generator=&amp;template=&quot;); ?&gt;
+</code></pre>
+<p>获取读者墙</p>
+<pre><code class="language-php">&lt;?php
+$period = time() - 999592000; // 時段: 30 天, 單位: 秒
+$counts = Typecho_Db::get()-&gt;fetchAll(Typecho_Db::get()
+-&gt;select('COUNT(author) AS cnt','author', 'url', 'mail')
+-&gt;from('table.comments')
+-&gt;where('created &gt; ?', $period )
+-&gt;where('status = ?', 'approved')
+-&gt;where('type = ?', 'comment')
+-&gt;where('authorId = ?', '0')
+-&gt;group('author')
+-&gt;order('cnt', Typecho_Db::SORT_DESC)
+-&gt;limit(25)
+);
+$mostactive = '';
+$avatar_path = 'http://www.gravatar.com/avatar/';
+foreach ($counts as $count) {
+  $avatar = $avatar_path . md5(strtolower($count['mail'])) . '.jpg';
+  $c_url = $count['url']; if ( !$c_url ) $c_url = Helper::options()-&gt;siteUrl;
+  $mostactive .= &quot;&lt;a href='&quot; . $c_url . &quot;' title='&quot; . $count['author'] . &quot; (参与&quot; . $count['cnt'] . &quot;次互动)' target='_blank'&gt;&lt;img src='&quot; . $avatar . &quot;' alt='&quot; . $count['author'] . &quot;的头像' class='avatar' width='32' height='32' /&gt;&lt;/a&gt;\n&quot;;
+}
+echo $mostactive; ?&gt;
+</code></pre>
+<p>登录与游客显示不同内容</p>
+<pre><code class="language-php">&lt;?php if($this-&gt;user-&gt;hasLogin()): ?&gt;
+登录可见
+&lt;?php else: ?&gt;
+游客与登录均可见
+&lt;?php endif; ?&gt;
+</code></pre>
+<p>部分内容来源：<a href="https://developer.aliyun.com/article/44707">云栖社区</a>,版权归原作者所有,若有侵权请联系删除。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新的开始]]></title>
+        <id>https://www.liczhi.com/post/restart/</id>
+        <link href="https://www.liczhi.com/post/restart/">
+        </link>
+        <updated>2020-08-19T16:46:22.000Z</updated>
+        <content type="html"><![CDATA[<p>由于莫得钱钱续费服务器加之freenom的免费域名出现问题，十二博客曾经离线过一段时间。</p>
+<p>搭上了腾讯云域名活动的便车注册了<code>SHIERTX.COM</code>并买了咖啡OVH一个月勉强维持新博客的运行，不过老数据已经一去不复返啦~</p>
+<p>新的站点，新的开始，嘿嘿:)</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://www.liczhi.com/post/hello-gridea/</id>
