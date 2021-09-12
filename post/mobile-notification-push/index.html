@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>浅谈手机通知推送 | 李某的小栈</title>
-<link rel="shortcut icon" href="https://www.liczhi.com/favicon.ico?v=1631424267325">
+<link rel="shortcut icon" href="https://www.liczhi.com/favicon.ico?v=1631424372585">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://www.liczhi.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="浅谈手机通知推送 | 李某的小栈 - Atom Feed" href="https://www.liczhi.com/atom.xml">
@@ -27,7 +27,7 @@ A：我给你发消息你怎么半天没回？
       <div class="main-content">
         <div class="site-header">
   <a href="https://www.liczhi.com">
-  <img class="avatar" src="https://www.liczhi.com/images/avatar.png?v=1631424267325" alt="">
+  <img class="avatar" src="https://www.liczhi.com/images/avatar.png?v=1631424372585" alt="">
   </a>
   <h1 class="site-title">
     李某的小栈
@@ -139,9 +139,9 @@ A：这跟 QQ/WeChat 私聊有什么区别？为什么要这么麻烦？<br>
 <img src="https://z3.ax1x.com/2021/09/12/4pVIER.png" alt="" loading="lazy"></p>
 <p>用文字描述过程如下：</p>
 <blockquote>
-<p>软件需要推送通知<br>
-软件服务器将通知推送到 Apple Push Notification service（APNs）<br>
-Apple Push Notification service（APNs） 将通知转发给用户。</p>
+<p>软件需要推送通知</p>
+<p>软件服务器将通知推送到 Apple Push Notification service（APNs）</p>
+<p>Apple Push Notification service（APNs） 将通知转发给用户。</p>
 </blockquote>
 <p>可以看到，这全过程都是由 Apple Push Notification service（APNs）完成通知的接收与发送，并且最后的通知推送也是由系统进行统一推送。这一过程中，设备上的软件<strong>本身没有参与</strong>。</p>
 <p>也就是说，<strong>iOS 通知推送并不需要软件的后台运行</strong>。完全由 Apple Push Notification service（APNs）和 系统 完成通知推送的方式实现了最大化的通知效率。别羡慕了，羡慕就去买台果子吧。</p>
@@ -151,9 +151,9 @@ Apple Push Notification service（APNs） 将通知转发给用户。</p>
 <h3 id="google-的-fcm">Google 的 FCM</h3>
 <p>严格意义上来说，某 404 公司对于自己操作系统的推送服务还是有进行一番 <s>无意义的挣扎</s> 努力。</p>
 <blockquote>
-<p>2010 年，在 Apple 推送通知服务发布后，Android 2.2 也马上推出了「云端至设备消息传递（Cloud to Device Messaging」，即 C2DM。<br>
-2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。<br>
-2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。</p>
+<p>2010 年，在 Apple 推送通知服务发布后，Android 2.2 也马上推出了「云端至设备消息传递（Cloud to Device Messaging」，即 C2DM。</p>
+<p>2012 年 404 小厂推出「Google 云消息传递（Google Cloud Messaging）」，即 GCM。GCM 取代了 C2DM 并实现了更好的功耗表现，且对于开发者更加友好。</p>
+<p>2014 年某 404 小厂收购 Firebase 后，将 GCM 改名为「Firebase 云消息传递（Firebase Cloud Messaging）」，即 FCM。FCM 较之 GCM 则更进一步简化了推送服务相关的开发工作。</p>
 </blockquote>
 <figure data-type="image" tabindex="1"><img src="https://z3.ax1x.com/2021/09/12/4pZMGV.png" alt="" loading="lazy"></figure>
 <p>从原理上来看，FCM 和 APNs 一致，也是按照 <code>软件服务器</code> ==&gt; <code>FCM 服务器</code> ==&gt; <code>用户</code> 这一流程实现的。</p>
@@ -161,9 +161,9 @@ Apple Push Notification service（APNs） 将通知转发给用户。</p>
 <p>虽然可能和你以前想象的不太一样，但是事实如此：<strong>Android 系统同样有一套较为完善的推送机制，这个推送机制绿色高效，实现原理类似于 Apple</strong>。</p>
 <p>不过想法是美好的，现实是残酷的。因为种种原因，FCM 在国内并不能正常使用，主要原因如下：</p>
 <blockquote>
-<p>FCM 依赖 Google Play Service 而绝大部分国内 Android 手机都阉割了 Google Play Service。<br>
-大部分国内 App 都没有注册 FCM（不支持 FCM）。<br>
-FCM 在国内的连接不稳定。</p>
+<p>FCM 依赖 Google Play Service 而绝大部分国内 Android 手机都阉割了 Google Play Service。</p>
+<p>大部分国内 App 都没有注册 FCM（不支持 FCM）。</p>
+<p>FCM 在国内的连接不稳定。</p>
 </blockquote>
 <p>对于已安装 Google Play Service 的用户，可以在手机拨号盘输入 <code>*#*#426#*#*</code>  查看你当前的 FCM 连接状态。</p>
 <figure data-type="image" tabindex="2"><img src="https://z3.ax1x.com/2021/09/12/4pZ6Zd.png" alt="" loading="lazy"></figure>
