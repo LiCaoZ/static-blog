@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.liczhi.com</id>
     <title>李某的小栈</title>
-    <updated>2021-09-12T04:15:37.970Z</updated>
+    <updated>2021-09-12T04:16:28.880Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.liczhi.com"/>
     <link rel="self" href="https://www.liczhi.com/atom.xml"/>
@@ -22,8 +22,9 @@
 <!--more-->
 <p>在合川，可以线上充值公交卡早已不是件新鲜事；最早可追溯到的报道是2019年4月24日今日合川网的<a href="http://www.jrhcw.com/html/2019-04/24/content_50420631.htm">合川这20个公交站可充值IC卡 你学会了吗？</a></p>
 <p>在报道中提到的可圈存公交站有以下几个：</p>
-<pre><code class="language-text">北城有瑞山路站、合州医院站、合川中学站、移通学院站、义乌小商品市场站、嘉陵路站、党校站、蟠龙花园站、杨柳街站、鹿角栅站、交通街站；南城有区政府站、南景豪爵站、南屏路站、合阳中学站、中什字站、中医院站、安太花园站、金鹿花园站。预计还会在城区铺设更多的圈存设备，目前还在进一步的规划中。
-</code></pre>
+<blockquote>
+<p>北城有瑞山路站、合州医院站、合川中学站、移通学院站、义乌小商品市场站、嘉陵路站、党校站、蟠龙花园站、杨柳街站、鹿角栅站、交通街站；南城有区政府站、南景豪爵站、南屏路站、合阳中学站、中什字站、中医院站、安太花园站、金鹿花园站。预计还会在城区铺设更多的圈存设备，目前还在进一步的规划中。</p>
+</blockquote>
 <p>公交站台上已有较为详细的教程，此文章将更详细的说明。</p>
 <p>下面我就来详细介绍一下如何充值、圈存。</p>
 <p>首先，打开微信，点击首页右上角放大镜图标。</p>
