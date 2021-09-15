@@ -1,222 +1,230 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
 <title>李某的小栈</title>
-<link rel="shortcut icon" href="https://www.liczhi.com/favicon.ico?v=1631460678553">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://www.liczhi.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="李某的小栈 - Atom Feed" href="https://www.liczhi.com/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.2/css/mdui.min.css">
+<style>
+    .mdui-theme-layout-dark #drawer {
+    background-color: #424242;
+}
+#drawer {
+    background-color: #fff;
+}
 
+.mdui-theme-layout-dark a.mdui-chip {
+    color: #fff;
+}
+a.mdui-chip {
+    color: #000;
+}
 
+.mdui-theme-layout-dark .mdui-card-media,
+.mdui-theme-layout-dark img {
+    filter:brightness(.8);
+}
 
-    <meta name="description" content="一只辣鸡李某的小破站" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://www.liczhi.com">
-  <img class="avatar" src="https://www.liczhi.com/images/avatar.png?v=1631460678553" alt="">
-  </a>
-  <h1 class="site-title">
-    李某的小栈
-  </h1>
-  <p class="site-description">
-    一只辣鸡李某的小破站
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/SHIERTX" target="_blank">
-          <i class="ri-github-line"></i>
-        </a>
-      
-    
-      
-    
-      
-        <a href="https://weibo.com/n/SHIERTX" target="_blank">
-          <i class="ri-weibo-line"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
+.mdui-theme-layout-dark .pagination-container a {
+    color: #fff;
+}
+.pagination-container a:before {
+    width: 0;
+}
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://www.liczhi.com/post/mobile-notification-push/">
-        <h2 class="post-title">浅谈手机通知推送</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-10-04
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://www.liczhi.com/tag/notification-push/" class="post-tag">
-            # 通知推送
-          </a>
-        
-      </div>
-      
-        <a href="https://www.liczhi.com/post/mobile-notification-push/" class="post-feature-image" style="background-image: url('https://z3.ax1x.com/2021/09/12/4pAsqs.png')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://www.liczhi.com/post/how-to-recharge-bus-card-online/">
-        <h2 class="post-title">如何完成在微信对公交卡的充值和线下圈存</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-08-28
-        </span>
-        <span>
-          3 min read
-        </span>
-        
-          <a href="https://www.liczhi.com/tag/jiao-yun-tong/" class="post-tag">
-            # 交运通
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>其实合川区的公交卡早就可以线上充值线下圈存了，但貌似很多同志不知道到底如何操作，故写此文。</p>
+html {
+    scrollbar-color: rgba(0,0,0,.5) #9E9E9E;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #9E9E9E;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+}
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://www.liczhi.com/post/typecho-functions/">
-        <h2 class="post-title">整理一下Typecho的一些函数</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-08-20
-        </span>
-        <span>
-          6 min read
-        </span>
-        
-          <a href="https://www.liczhi.com/tag/typecho/" class="post-tag">
-            # Typecho
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>网上收集的一些Typecho函数，希望在需要时能用得上~</p>
+.lightense-backdrop {
+    background-color: rgba(0,0,0,.4) !important;
+    backdrop-filter: none !important;
+}
+figure {
+    outline: none;
+}
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://www.liczhi.com/post/restart/">
-        <h2 class="post-title">新的开始</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-08-20
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://www.liczhi.com/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2018-12-12
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://www.liczhi.com/tag/gridea/" class="post-tag">
-            # Gridea
-          </a>
-        
-      </div>
-      
-        <a href="https://www.liczhi.com/post/hello-gridea/" class="post-feature-image" style="background-image: url('https://www.liczhi.com/post-images/hello-gridea.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+.mdui-theme-layout-dark .hljs {
+    padding: 0 !important;
+}
 
-      </div>
-    </article>
-  
-</div>
+.mdui-theme-layout-dark#post nav a {
+    text-decoration: none;
+    color: #fff;
+}
+#post nav a {
+    text-decoration: none;
+    color: #000;
+}
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
+#drawer .spread {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
-    
-        <div class="site-footer">
-  由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电
-  <a class="rss" href="https://www.liczhi.com/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
+#post .mdui-card-media img {
+    max-height: 75vh;
+}
+</style>
+</head>
+<body id="index" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://www.liczhi.com" class="mdui-typo-headline">李某的小栈</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+        </div>
     </div>
-  </body>
+</header>
+
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
+        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
+        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
+        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
+        
+        <a href="https://github.com/SHIERTX/static-blog" class="spread"><li class="mdui-list-item mdui-ripple">博客仓库</li></a>
+    </ul>
+</nav>
+
+
+<main class="mdui-m-a-2 mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-xl-4 mdui-typo mdui-m-t-2">
+    
+    <section class="mdui-col mdui-m-b-2">
+        <div class="mdui-card">
+            
+            <div class="mdui-card-media">
+                <img src="https://z3.ax1x.com/2021/09/12/4pAsqs.png" onerror="this.src='https://z3.ax1x.com/2021/09/12/4pAsqs.png';">
+                
+            </div>
+            
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title"><a href="https://www.liczhi.com/post/mobile-notification-push/">浅谈手机通知推送</a></div>
+                <div class="mdui-card-primary-subtitle">2020-10-04</div>
+            </div>
+            <div class="mdui-card-content">由于排版略微不优雅，请直接点击下方链接进入原作者博客查看~
+https://blog.linioi.com/posts/3/
+...</div>
+        </div>
+    </section>
+
+    <section class="mdui-col mdui-m-b-2">
+        <div class="mdui-card">
+            
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title"><a href="https://www.liczhi.com/post/how-to-recharge-bus-card-online/">如何完成在微信对公交卡的充值和线下圈存</a></div>
+                <div class="mdui-card-primary-subtitle">2020-08-28</div>
+            </div>
+            <div class="mdui-card-content">其实合川区的公交卡早就可以线上充值线下圈存了，但貌似很多同志不知道到底如何操作，故写此文。
+
+在合川，可以线上充值公交卡早已不是件新鲜事；最早可追溯到的报道是2019年4月24日今日合川网的合川这20个公交站可充值IC卡 你学会了吗？
+在报...</div>
+        </div>
+    </section>
+
+    <section class="mdui-col mdui-m-b-2">
+        <div class="mdui-card">
+            
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title"><a href="https://www.liczhi.com/post/typecho-functions/">整理一下Typecho的一些函数</a></div>
+                <div class="mdui-card-primary-subtitle">2020-08-20</div>
+            </div>
+            <div class="mdui-card-content">网上收集的一些Typecho函数，希望在需要时能用得上~
+
+站点名称
+&lt;?php $this-&gt;options-&gt;title() ?&gt;
+
+站点网址
+&lt;?php $this-&gt;options -&gt;si...</div>
+        </div>
+    </section>
+
+    <section class="mdui-col mdui-m-b-2">
+        <div class="mdui-card">
+            
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title"><a href="https://www.liczhi.com/post/restart/">新的开始</a></div>
+                <div class="mdui-card-primary-subtitle">2020-08-20</div>
+            </div>
+            <div class="mdui-card-content">由于莫得钱钱续费服务器加之freenom的免费域名出现问题，十二博客曾经离线过一段时间。
+搭上了腾讯云域名活动的便车注册了SHIERTX.COM并买了咖啡OVH一个月勉强维持新博客的运行，不过老数据已经一去不复返啦~
+新的站点，新的开始，嘿...</div>
+        </div>
+    </section>
+
+    <section class="mdui-col mdui-m-b-2">
+        <div class="mdui-card">
+            
+            <div class="mdui-card-media">
+                <img src="https://www.liczhi.com/post-images/hello-gridea.png" onerror="this.src='https://www.liczhi.com/post-images/hello-gridea.png';">
+                
+            </div>
+            
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title"><a href="https://www.liczhi.com/post/hello-gridea/">Hello Gridea</a></div>
+                <div class="mdui-card-primary-subtitle">2018-12-12</div>
+            </div>
+            <div class="mdui-card-content">👏  欢迎使用 Gridea ！
+✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
+
+Github
+Gridea 主页
+示例网站
+特性👇
+📝  你可以使用最酷的 Markdo...</div>
+        </div>
+    </section>
+
+</main>
+
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    
+    
+</nav>
+
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/mdui/1.0.2/js/mdui.min.js"></script>
+<script src="https://www.liczhi.com/media/js/modify.js"></script>
+<script src="https://www.liczhi.com/media/js/masonry.pkgd.min.js"></script>
+<script src="https://www.liczhi.com/media/js/imagesloaded.pkgd.min.js"></script>
+<script>
+// 初始化-文章列表页面瀑布流。
+function masonry() {
+    // 初始化 masonry
+    $('.mdui-row-xs-1').masonry({
+        itemSelector: '.mdui-col',
+        horizontalOrder: true
+    });
+}
+masonry()
+$('.mdui-col').imagesLoaded( function() {
+    masonry()
+});
+</script>
+
+</body>
 </html>

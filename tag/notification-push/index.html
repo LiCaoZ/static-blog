@@ -1,129 +1,147 @@
 <html>
-  <head>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>通知推送 | 李某的小栈</title>
-<link rel="shortcut icon" href="https://www.liczhi.com/favicon.ico?v=1631460678553">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://www.liczhi.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="通知推送 | 李某的小栈 - Atom Feed" href="https://www.liczhi.com/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<head>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
+<title>通知推送 - 李某的小栈</title>
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.2/css/mdui.min.css">
+<style>
+    .mdui-theme-layout-dark #drawer {
+    background-color: #424242;
+}
+#drawer {
+    background-color: #fff;
+}
 
+.mdui-theme-layout-dark a.mdui-chip {
+    color: #fff;
+}
+a.mdui-chip {
+    color: #000;
+}
 
+.mdui-theme-layout-dark .mdui-card-media,
+.mdui-theme-layout-dark img {
+    filter:brightness(.8);
+}
 
-  <meta name="description" content="一只辣鸡李某的小破站" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://www.liczhi.com">
-  <img class="avatar" src="https://www.liczhi.com/images/avatar.png?v=1631460678553" alt="">
-  </a>
-  <h1 class="site-title">
-    李某的小栈
-  </h1>
-  <p class="site-description">
-    一只辣鸡李某的小破站
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/SHIERTX" target="_blank">
-          <i class="ri-github-line"></i>
-        </a>
-      
-    
-      
-    
-      
-        <a href="https://weibo.com/n/SHIERTX" target="_blank">
-          <i class="ri-weibo-line"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
+.mdui-theme-layout-dark .pagination-container a {
+    color: #fff;
+}
+.pagination-container a:before {
+    width: 0;
+}
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：# 通知推送
-            </h2> 
+html {
+    scrollbar-color: rgba(0,0,0,.5) #9E9E9E;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #9E9E9E;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+}
+
+.lightense-backdrop {
+    background-color: rgba(0,0,0,.4) !important;
+    backdrop-filter: none !important;
+}
+figure {
+    outline: none;
+}
+
+.mdui-theme-layout-dark .hljs {
+    padding: 0 !important;
+}
+
+.mdui-theme-layout-dark#post nav a {
+    text-decoration: none;
+    color: #fff;
+}
+#post nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+#drawer .spread {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#post .mdui-card-media img {
+    max-height: 75vh;
+}
+</style>
+</head>
+<body>
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://www.liczhi.com" class="mdui-typo-headline">李某的小栈</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
         </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://www.liczhi.com/post/mobile-notification-push/">
-        <h2 class="post-title">浅谈手机通知推送</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2020-10-04
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://www.liczhi.com/tag/notification-push/" class="post-tag">
-            # 通知推送
-          </a>
-        
-      </div>
-      
-        <a href="https://www.liczhi.com/post/mobile-notification-push/" class="post-feature-image" style="background-image: url('https://z3.ax1x.com/2021/09/12/4pAsqs.png')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
-
-        <div class="pagination-container">
-  
-  
-</div>
-
-        <div class="site-footer">
-  由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电
-  <a class="rss" href="https://www.liczhi.com/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
     </div>
-  </body>
+</header>
+
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
+        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
+        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
+        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
+        
+        <a href="https://github.com/SHIERTX/static-blog" class="spread"><li class="mdui-list-item mdui-ripple">博客仓库</li></a>
+    </ul>
+</nav>
+
+
+<main class="mdui-container mdui-typo mdui-m-t-2">
+    
+    <section class="mdui-col mdui-m-b-2">
+        <div class="mdui-card">
+            
+            <div class="mdui-card-media">
+                <img src="https://z3.ax1x.com/2021/09/12/4pAsqs.png" onerror="this.src='https://z3.ax1x.com/2021/09/12/4pAsqs.png';">
+                
+            </div>
+            
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title"><a href="https://www.liczhi.com/post/mobile-notification-push/">浅谈手机通知推送</a></div>
+                <div class="mdui-card-primary-subtitle">2020-10-04</div>
+            </div>
+            <div class="mdui-card-content">由于排版略微不优雅，请直接点击下方链接进入原作者博客查看~
+https://blog.linioi.com/posts/3/
+...</div>
+        </div>
+    </section>
+
+</main>
+
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    
+    
+</nav>
+
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/mdui/1.0.2/js/mdui.min.js"></script>
+<script src="https://www.liczhi.com/media/js/modify.js"></script>
+
+</body>
 </html>
