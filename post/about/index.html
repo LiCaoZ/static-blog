@@ -1,174 +1,335 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
-<!-- 必要参数 -->
-<meta charset="utf-8"/>
-<title>关于 | 李某的小栈</title>
-<meta name="keywords" content="关键词"/>
-<meta name="description" content="简述"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- CSS -->
-<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.2/css/mdui.min.css">
-<style>
-    .mdui-theme-layout-dark #drawer {
-    background-color: #424242;
-}
-#drawer {
-    background-color: #fff;
-}
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>关于 - 李某的小栈</title>
+<link rel="shortcut icon" href="https://www.liczhi.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://www.liczhi.com/media/css/tailwind.css">
+<link rel="stylesheet" href="https://www.liczhi.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于 - 李某的小栈 - Atom Feed" href="https://www.liczhi.com/atom.xml">
 
-.mdui-theme-layout-dark a.mdui-chip {
-    color: #fff;
-}
-a.mdui-chip {
-    color: #000;
-}
+    
 
-.mdui-theme-layout-dark .mdui-card-media,
-.mdui-theme-layout-dark img {
-    filter:brightness(.8);
-}
+  <meta name="description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
 
-.mdui-theme-layout-dark .pagination-container a {
-    color: #fff;
-}
-.pagination-container a:before {
-    width: 0;
-}
+我
+一个你应该能猜到年龄的初三学生；嘉陵江畔，合中学子，想上本部高中。
+出生以及前11年生活在人口大省的平顶山市湛河区，当前坐标重庆合川。
+出没在互联网的每一个角落，常用马甲@SHIERTX
+学校..." />
+  <meta property="og:title" content="关于 - 李某的小栈">
+  <meta property="og:description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
 
-html {
-    scrollbar-color: rgba(0,0,0,.5) #9E9E9E;
-    scrollbar-width: thin;
-}
-::-webkit-scrollbar {
-    width: 5px;
-}
-::-webkit-scrollbar-track {
-    background-color: #9E9E9E;
-}
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.5);
-}
+我
+一个你应该能猜到年龄的初三学生；嘉陵江畔，合中学子，想上本部高中。
+出生以及前11年生活在人口大省的平顶山市湛河区，当前坐标重庆合川。
+出没在互联网的每一个角落，常用马甲@SHIERTX
+学校..." />
+  <meta property="og:type" content="articles">
+  <meta property="og:url" content="https://www.liczhi.com/post/about/" />
+  <meta property="og:image" content="https://www.liczhi.com/images/avatar.png">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta name="twitter:title" content="关于 - 李某的小栈">
+  <meta name="twitter:description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
 
-.lightense-backdrop {
-    background-color: rgba(0,0,0,.4) !important;
-    backdrop-filter: none !important;
-}
-figure {
-    outline: none;
-}
+我
+一个你应该能猜到年龄的初三学生；嘉陵江畔，合中学子，想上本部高中。
+出生以及前11年生活在人口大省的平顶山市湛河区，当前坐标重庆合川。
+出没在互联网的每一个角落，常用马甲@SHIERTX
+学校...">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.liczhi.com/post/about/">
 
-.mdui-theme-layout-dark .hljs {
-    padding: 0 !important;
-}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+ 
+  
+    <link rel="stylesheet" href="https://www.liczhi.com/media/css/prism-github.css">
+  
 
-.mdui-theme-layout-dark#post nav a {
-    text-decoration: none;
-    color: #fff;
-}
-#post nav a {
-    text-decoration: none;
-    color: #000;
-}
-
-#drawer .spread {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
-#post .mdui-card-media img {
-    max-height: 75vh;
-}
-</style>
-<link rel="stylesheet" href="https://www.liczhi.com/media/css/github-gist.min.css">
-<link rel="stylesheet" href="https://www.liczhi.com/media/css/railscasts.min.css">
+  
 </head>
-<body id="post" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
-<header role="banner">
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
-        <div class="mdui-toolbar">
-            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
-            <a href="https://www.liczhi.com" class="mdui-typo-headline">李某的小栈</a>
-            <div class="mdui-toolbar-spacer"></div>
-            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
-        </div>
-    </div>
-</header>
 
-<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
-    <ul class="mdui-list">
-        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
-        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
-        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
-        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <a href="https://www.liczhi.com" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+      李某的小栈
+    </a>
+    <div class="max-w-4xl w-full mx-auto">
+      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
+        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
+          关于
+        </h1>
         
-        <a href="https://github.com/SHIERTX/static-blog" class="spread"><li class="mdui-list-item mdui-ripple">博客仓库</li></a>
-    </ul>
-</nav>
-
-
-<main class="mdui-container mdui-typo mdui-m-t-2">
-    <section class="mdui-card">
-        
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">关于</div>
-            <div class="mdui-card-primary-subtitle">发布于 2019-01-25，包含标签 。</div>
+        <div class="mb-8 flex flex-wrap">
+          <div class="text-gray-400 text-sm mr-4">2019-01-25 · 2 min read</div>
+          
         </div>
-        <div class="mdui-card-content"><blockquote>
+        <div class="markdown mb-8" v-pre>
+          <blockquote>
 <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
 </blockquote>
-<h2 id="十二同学">十二同学</h2>
-<p>一个你应该能猜出年龄初三学生，嘉陵江畔，合中学子。</p>
+<h2 id="我">我</h2>
+<p>一个你应该能猜到年龄的初三学生；嘉陵江畔，合中学子，想上本部高中。</p>
+<p>出生以及前11年生活在人口大省的平顶山市湛河区，当前坐标重庆合川。</p>
+<p>出没在互联网的每一个角落，常用马甲@SHIERTX</p>
+<p>学校监控美食区&amp;生活区UP主</p>
+<p>是个吃吃吃货，每天一杯牛奶必不可少。</p>
 <h2 id="性格">性格</h2>
 <p><s>或许</s> 比较内向，不善于 <strong>在现实中</strong> 主动和人搭话。</p>
 <p>十六型人格测试 - <a href="https://www.16personalities.com/ch/intp-%E4%BA%BA%E6%A0%BC">逻辑学家</a></p>
 <p><s>SDS 抑郁自评表 - 可能有重度抑郁</s> 希望能让大家看到我阳光的一面:)</p>
-<h2 id="爱好">爱好</h2>
-<p>军迷，<s>但只知道少的可怜的军事知识</s></p>
-<p>阔爱的动物，<s>尤其是我家窗户边上的鸽子</s></p>
-<p>游戏，手残玩家，适合玩开心消消乐等<s>益智类</s>老年人休闲游戏。</p>
-<p>音乐，在听的那段时间合我心意的都会扔到喜欢列表。</p>
-<p>地理，貌似还是蛮简单的。<s>虽然期末考试的成绩并不理想。</s></p>
-<p>生物，和地理一样是很喜欢的学科，但期末考试成绩同样不怎么理想:(</p>
-<p>和一些其他东西……</p>
-<h2 id="职业">职业</h2>
-<p>主业：学生，同时，我还是——</p>
-<p>合川区无道科技工作室 <s>法定代表人</s> 经营者<br>
-和<br>
-阅文集团作家 斗鱼主播 十二博客联合创始人兼开发兼运维兼宣传兼打杂 合川中学非官方微博运营者/COM域名持有者/逐浪记者团团长 微信公众号与小程序 &quot;我是十二同学&quot;开发者与运维 支付宝开放平台ISP  华为开发者平台 注册开发者 <s>其实是为了申请到HMS的HUAWEI PUSH</s> 酷安开发者平台注册开发者 <s>没有一个APP是审核通过了的</s> TrustOcean合作伙伴</p>
-<h2 id="我的项目">我的项目</h2>
-<h3 id="开源项目">开源项目</h3>
-<p><a href="https://github.com/shiertx">GitHub</a></p>
-<p><a href="https://gitee.com/shiertx">Gitee</a></p>
-<h2 id="my-github-stats">My GitHub Stats</h2>
-<figure data-type="image" tabindex="1"><img src="https://github-readme-stats.vercel.app/api?username=shiertx&amp;show_icons=true&amp;theme=vue&amp;hide_title=true" alt="十二同学's Github Stats" loading="lazy"></figure>
-<h2 id="most-used-languages">Most Used Languages</h2>
-<figure data-type="image" tabindex="2"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiertx&amp;theme=vue&amp;layout=compact&amp;hide_title=true" alt="Top Langs" loading="lazy"></figure>
+<p>是个废物，啥都不会，手头有一个 <a href="https://www.tianyancha.com/company/4540533850">工作室</a>。</p>
+<h2 id="联系我">联系我</h2>
+<h3 id="微信">微信</h3>
+<p>企业微信二维码：<a href="//static.liczhi.com/wework.png">图链</a></p>
+<p>一个 <s>没有人的</s> 水群：<a href="https://wework.qpic.cn/wwpic/175503_l86OJK4GSaqwEme_1633419304/0">图链</a></p>
+<h3 id="qq">QQ</h3>
+<p>MjI3MTg5NzUyMQ==</p>
+<h3 id="微博">微博</h3>
+<p><a href="https://weibo.com/u/5912241478">@SHIERTX</a></p>
 <h2 id="and">And……</h2>
 <p>本站已加入<a href="https://www.foreverblog.cn">十年之约</a>，期待十年后再见到你~</p>
-<p>感谢 <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a> 项目提供上方Stats和language卡片，设置方法可查看 <a href="https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_cn.md">这里</a> .</p>
-<p>感谢 <a href="https://www.geekzu.cn">极客族</a> 免费提供 Gravatar/Google Fonts 镜像</p>
 <p>感谢 <a href="https://www.upyun.com">又拍云</a> 提供免费 CDN加速/云存储 服务</p>
 <p>静态博客由 <a href="https://gridea.dev">Gridea</a> 生成并托管于 <a href="https://pages.github.com">GitHub Pages</a> ，评论系统由 GTalk 与 GitHub Issues 联合供电。</p>
-</div>
-        <div class="mdui-card-header">
-            <img class="mdui-card-header-avatar" src="https://www.liczhi.com/images/avatar.png">
-            <div class="mdui-card-header-title">李某的小栈</div>
-            <div class="mdui-card-header-subtitle">一只辣鸡李某的小破站</div>
+
         </div>
-    </section>
+        <!-- Share to Twitter, Weibo, Telegram -->
+        <div class="flex items-center">
+          <div class="mr-4 flex items-center">
+            <i class="ri-share-forward-line text-gray-500"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
+            <i class="ri-weibo-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
+            <i class="ri-telegram-line"></i>
+          </div>
+        </div>
+      </div>
 
       
-            
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+          <div id="gitalk-container"></div>
+        
 
-<div id="gitalk-container"></div>
+        
+      
 
-<script>
+      
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电<br>
+本站内容如非特别声明均在知识共享 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">署名-非商业性使用-相同方式共享 4.0 国际</a> 协议之条款下提供。<br>如遇显示异常请使用 <a href="https://www.microsoft.com/edge?from=SHIERTX" target="_blank" rel="noopener">最新版 Edge 浏览器</a> 访问本站
+</footer>
+    </div>
+
+    <!-- TOC Container -->
+    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
+      <i class="ri-file-list-line"></i>
+    </div>
+
+    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
+      <div class="flex mb-4 justify-end">
+        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
+          <i class="ri-close-line text-lg"></i>
+        </div>
+      </div>
+      <div class="post-toc-container">
+        <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%88%91">我</a></li>
+<li><a href="#%E6%80%A7%E6%A0%BC">性格</a></li>
+<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91">联系我</a>
+<ul>
+<li><a href="#%E5%BE%AE%E4%BF%A1">微信</a></li>
+<li><a href="#qq">QQ</a></li>
+<li><a href="#%E5%BE%AE%E5%8D%9A">微博</a></li>
+</ul>
+</li>
+<li><a href="#and">And……</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg">
+  </div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://www.liczhi.com/media/scripts/main.js"></script>
+  
+  <!-- Code Highlight -->
+  
+    <script src="https://www.liczhi.com/media/prism.js"></script>
+    <script>
+      Prism.highlightAll()
+    </script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+  <script>
+    //拿到预览框架，也就是上面的html代码
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    //定义图片数组变量
+    var imgitems;
+    /**
+    * 用于显示预览界面
+    * @param index 图片数组下标
+    */
+    function viewImg(index) {
+      //其它选项这里不做过多阐述，详情见官网
+      var pswpoptions = {
+        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+        bgOpacity: 0.7, // 背景透明度，0-1
+        maxSpreadZoom: 3, // 缩放级别，不要太大
+      };
+      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
+      gallery.init()
+    }
+    /**
+    * 用于添加图片点击事件
+    * @param img 图片元素
+    * @param index 所属下标（在imgitems中的位置）
+    */
+    function addImgClick(img, index) {
+      img.onclick = function() {
+        viewImg(index)
+      }
+    }
+    /**
+    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+    * 异步加载图片可在图片元素创建完成后调用此方法
+    */
+    function initImg() {
+      //重置图片数组
+      imgitems = [];
+      //查找class:markdown 下的所有img元素并遍历
+      var imgs = document.querySelectorAll('.markdown img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        //本站相册初始为loading图片，真实图片放在data-src
+        var ds = img.getAttribute("data-src");
+        //创建image对象，用于获取图片宽高
+        var imgtemp = new Image();
+        //判断是否存在data-src
+        if (ds != null && ds.length > 0) {
+          imgtemp.src = ds
+        } else {
+          imgtemp.src = img.src
+        }
+        //判断是否存在缓存
+        if (imgtemp.complete) {
+          var imgobj = {
+            "src": imgtemp.src,
+            "w": imgtemp.width,
+            "h": imgtemp.height,
+          };
+          imgitems[i] = imgobj;
+          addImgClick(img, i);
+        } else {
+          console.log('进来了2')
+          imgtemp.index = i;
+          imgtemp.img = img;
+          imgtemp.onload = function() {
+            var imgobj = {
+              "src": this.src,
+              "w": this.width,
+              "h": this.height,
+            };
+            //不要使用push，因为onload前后顺序会不同
+            imgitems[this.index] = imgobj
+            //添加点击事件
+            addImgClick(this.img, this.index);
+          }
+        }
+      }
+    }
+    //初始化
+    initImg();
+  </script>
+  
+  
+    
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script type="application/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script type="application/javascript">
 
   var gitalk = new Gitalk({
     clientID: 'ae32abeb35afeb8f4f44',
@@ -176,7 +337,7 @@ figure {
     repo: 'static-blog',
     owner: 'SHIERTX',
     admin: ['SHIERTX'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
@@ -184,34 +345,8 @@ figure {
 
 </script>
 
-            
-
-            
-      
-</main>
-
-<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
     
-    
-</nav>
-
-<div class="mdui-m-t-2 mdui-text-center mdui-typo">
-    由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电
-</div>
-
-<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/mdui/1.0.2/js/mdui.min.js"></script>
-<script src="https://www.liczhi.com/media/js/modify.js"></script>
-<script src="https://www.liczhi.com/media/js/highlight.min.js"></script>
-<script src="https://www.liczhi.com/media/js/lightense.min.js"></script>
-<script>
-// 初始化-高亮代码
-hljs.initHighlightingOnLoad();
-// 初始化-文章图片放大
-window.addEventListener('load', function () {
-    Lightense('#post .mdui-card-content img');
-}, false);
-</script>
-
+  
 </body>
+
 </html>

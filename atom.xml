@@ -2,24 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.liczhi.com</id>
     <title>李某的小栈</title>
-    <updated>2021-09-15T13:03:19.111Z</updated>
+    <updated>2021-10-18T15:49:13.904Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.liczhi.com"/>
     <link rel="self" href="https://www.liczhi.com/atom.xml"/>
-    <subtitle>一只辣鸡李某的小破站</subtitle>
+    <subtitle>寄意寒星荃不察，我以我血荐轩辕。</subtitle>
     <logo>https://www.liczhi.com/images/avatar.png</logo>
     <icon>https://www.liczhi.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 李某的小栈</rights>
-    <entry>
-        <title type="html"><![CDATA[浅谈手机通知推送]]></title>
-        <id>https://www.liczhi.com/post/mobile-notification-push/</id>
-        <link href="https://www.liczhi.com/post/mobile-notification-push/">
-        </link>
-        <updated>2020-10-04T13:07:07.000Z</updated>
-        <content type="html"><![CDATA[<p>由于排版略微不优雅，请直接点击下方链接进入原作者博客查看~</p>
-<p><a href="https://blog.linioi.com/posts/3/">https://blog.linioi.com/posts/3/</a></p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[如何完成在微信对公交卡的充值和线下圈存]]></title>
         <id>https://www.liczhi.com/post/how-to-recharge-bus-card-online/</id>

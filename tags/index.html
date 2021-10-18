@@ -1,139 +1,88 @@
-<html>
+<html lang="en">
 <head>
-<!-- 必要参数 -->
-<meta charset="utf-8"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>李某的小栈</title>
-<meta name="keywords" content="关键词"/>
-<meta name="description" content="简述"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- CSS -->
-<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.2/css/mdui.min.css">
-<style>
-    .mdui-theme-layout-dark #drawer {
-    background-color: #424242;
-}
-#drawer {
-    background-color: #fff;
-}
+<link rel="shortcut icon" href="https://www.liczhi.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://www.liczhi.com/media/css/tailwind.css">
+<link rel="stylesheet" href="https://www.liczhi.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="李某的小栈 - Atom Feed" href="https://www.liczhi.com/atom.xml">
 
-.mdui-theme-layout-dark a.mdui-chip {
-    color: #fff;
-}
-a.mdui-chip {
-    color: #000;
-}
+    
 
-.mdui-theme-layout-dark .mdui-card-media,
-.mdui-theme-layout-dark img {
-    filter:brightness(.8);
-}
-
-.mdui-theme-layout-dark .pagination-container a {
-    color: #fff;
-}
-.pagination-container a:before {
-    width: 0;
-}
-
-html {
-    scrollbar-color: rgba(0,0,0,.5) #9E9E9E;
-    scrollbar-width: thin;
-}
-::-webkit-scrollbar {
-    width: 5px;
-}
-::-webkit-scrollbar-track {
-    background-color: #9E9E9E;
-}
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.5);
-}
-
-.lightense-backdrop {
-    background-color: rgba(0,0,0,.4) !important;
-    backdrop-filter: none !important;
-}
-figure {
-    outline: none;
-}
-
-.mdui-theme-layout-dark .hljs {
-    padding: 0 !important;
-}
-
-.mdui-theme-layout-dark#post nav a {
-    text-decoration: none;
-    color: #fff;
-}
-#post nav a {
-    text-decoration: none;
-    color: #000;
-}
-
-#drawer .spread {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
-#post .mdui-card-media img {
-    max-height: 75vh;
-}
-</style>
+  <meta name="description" content="寄意寒星荃不察，我以我血荐轩辕。" />
 </head>
 <body>
-<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
-<header role="banner">
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
-        <div class="mdui-toolbar">
-            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
-            <a href="https://www.liczhi.com" class="mdui-typo-headline">李某的小栈</a>
-            <div class="mdui-toolbar-spacer"></div>
-            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
-        </div>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
-</header>
-
-<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
-    <ul class="mdui-list">
-        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
-        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
-        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
-        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
-        
-        <a href="https://github.com/SHIERTX/static-blog" class="spread"><li class="mdui-list-item mdui-ripple">博客仓库</li></a>
-    </ul>
-</nav>
-
-
-<main class="mdui-container mdui-m-t-2">
-    <div class="mdui-card">
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">标签列表</div>
-        </div>
-        <div class="mdui-card-actions">
-            
-                <a href="https://www.liczhi.com/tag/notification-push/" class="mdui-chip"><span class="mdui-chip-title">通知推送</span></a>
-            
-                <a href="https://www.liczhi.com/tag/jiao-yun-tong/" class="mdui-chip"><span class="mdui-chip-title">交运通</span></a>
-            
-                <a href="https://www.liczhi.com/tag/typecho/" class="mdui-chip"><span class="mdui-chip-title">Typecho</span></a>
-            
-                <a href="https://www.liczhi.com/tag/gridea/" class="mdui-chip"><span class="mdui-chip-title">Gridea</span></a>
-            
-        </div>
-    </div>
-</main>
-
-<div class="mdui-m-t-2 mdui-text-center mdui-typo">
-    由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/post/links" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        友链
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://www.liczhi.com/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
-
-<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/mdui/1.0.2/js/mdui.min.js"></script>
-<script src="https://www.liczhi.com/media/js/modify.js"></script>
-
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://www.liczhi.com/tag/jiao-yun-tong/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              交运通（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://www.liczhi.com/tag/typecho/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Typecho（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://www.liczhi.com/tag/gridea/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Gridea（1）
+            </a>
+          </div>
+        
+      </div>
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  由 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> 供电<br>
+本站内容如非特别声明均在知识共享 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">署名-非商业性使用-相同方式共享 4.0 国际</a> 协议之条款下提供。<br>如遇显示异常请使用 <a href="https://www.microsoft.com/edge?from=SHIERTX" target="_blank" rel="noopener">最新版 Edge 浏览器</a> 访问本站
+</footer>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://www.liczhi.com/media/scripts/main.js"></script>
 </body>
 </html>
