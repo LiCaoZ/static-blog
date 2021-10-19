@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.liczhi.com</id>
     <title>李某的小栈</title>
-    <updated>2021-10-19T13:54:40.210Z</updated>
+    <updated>2021-10-19T14:05:14.689Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.liczhi.com"/>
     <link rel="self" href="https://www.liczhi.com/atom.xml"/>
@@ -24,12 +24,11 @@
 <p>您帮助我们塑造了 Windows 的未来。谢谢！</p>
 </blockquote>
 <p>看到邮箱里收到一封 <code>Windows Insider Program</code> 的信，分享一下。</p>
-<figure data-type="image" tabindex="1"><img src="https://z3.ax1x.com/2021/10/19/509mgs.png" alt="" loading="lazy"></figure>
 <p>自 6 月发布第一个 Insider Preview 版本以来，我们看到了前所未有的反馈和参与度。你的精力和热情帮助创建了一个全新 Windows 用户界面，使你更接近你喜欢的内容，从而提高工作效率并激发创造力。</p>
 <p>为了庆祝这一里程碑和计划 7 周年纪念日，我们专门为您设计了周年纪念壁纸。</p>
-<figure data-type="image" tabindex="2"><img src="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-dark.jpg" alt="暗色主题" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-dark.jpg" alt="暗色主题" loading="lazy"></figure>
 <p><a href="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-dark.jpg">下载暗色主题</a></p>
-<figure data-type="image" tabindex="3"><img src="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-light.jpg" alt="浅色主题" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-light.jpg" alt="浅色主题" loading="lazy"></figure>
 <p><a href="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-light.jpg">下载浅色主题</a></p>
 ]]></content>
     </entry>
