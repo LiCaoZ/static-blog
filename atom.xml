@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.liczhi.com</id>
     <title>李某的小栈</title>
-    <updated>2021-10-22T13:00:03.379Z</updated>
+    <updated>2021-10-23T06:33:48.091Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.liczhi.com"/>
     <link rel="self" href="https://www.liczhi.com/atom.xml"/>
@@ -375,6 +375,50 @@ YOUSONOFBITCH”都不能说。<br>
 <p><a href="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-dark.jpg">下载暗色主题</a></p>
 <figure data-type="image" tabindex="2"><img src="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-light.jpg" alt="浅色主题" loading="lazy"></figure>
 <p><a href="https://static.liczhi.com/WIP-7th-anniversary-wallpaper-light.jpg">下载浅色主题</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[初中物理电学笔记]]></title>
+        <id>https://www.liczhi.com/post/middle-school-physics-electrical-notes/</id>
+        <link href="https://www.liczhi.com/post/middle-school-physics-electrical-notes/">
+        </link>
+        <updated>2021-09-17T14:09:48.000Z</updated>
+        <content type="html"><![CDATA[<p>部编版初三全一册物理 第十五章 电流和电路 笔记</p>
+<h2 id="第一节-两种电荷">第一节 两种电荷</h2>
+<p>物体<strong>只要带电</strong>，就能吸引<strong>轻小物体</strong>。</p>
+<p>吸引时两种物体带异种电荷或<strong>其中一个</strong>不带电。</p>
+<h3 id="两种电荷">两种电荷</h3>
+<h4 id="摩擦起电">摩擦起电</h4>
+<p>用摩擦的方法使物体带点，叫做<strong>摩擦起电</strong>。除此之外，还有<strong>接触起电</strong>和<strong>感应起电</strong>。</p>
+<h4 id="正负电荷">正负电荷</h4>
+<p>自然界<strong>只有</strong>两种电荷。</p>
+<p>人们把<strong>用丝绸摩擦过</strong>的<strong>玻璃棒</strong>带的电荷叫做<strong>正电荷</strong>，<strong>用毛皮摩擦过</strong>的<strong>橡胶棒</strong>带的电荷叫做<strong>负电荷</strong>。</p>
+<blockquote>
+<p>记忆方法：丝玻正，毛橡负。</p>
+</blockquote>
+<p>同种电荷互相排斥，异种电荷互相吸引。</p>
+<blockquote>
+<p>记忆方法：同斥异吸</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://z3.ax1x.com/2021/09/17/4M771P.jpg" alt="手写版" loading="lazy"></figure>
+<h4 id="电荷量">电荷量</h4>
+<p>物体所带电荷的多少叫做<strong>电荷量</strong>，简称<strong>电荷</strong>，电荷量用字母表示为Q或q；电荷量的单位是<strong>库仑</strong>，简称<strong>库</strong>，符号是<strong>C</strong>。</p>
+<h4 id="验电器">验电器</h4>
+<p>验电器的作用：检验物体是否带电；原理：同种电荷互相排斥。</p>
+<figure data-type="image" tabindex="2"><img src="https://z3.ax1x.com/2021/09/18/4lvwz4.jpg" alt="验电器图" loading="lazy"></figure>
+<p>绝缘垫用于隔绝金属杆与金属外壳。</p>
+<p>除图中已标注部分外，还有接地和外侧的金属外壳。</p>
+<figure data-type="image" tabindex="3"><img src="https://z3.ax1x.com/2021/09/18/4lx7jJ.png" alt="接地" loading="lazy"></figure>
+<p>用带电体接触验电器的金属球，就有一部分电荷转移到验电器的两片金属箱上，这两片金属箔带同种电荷，由于互相排斥而张开。</p>
+<blockquote>
+<p>易错辨析：正电荷在固体导体中的位置是相对固定的，能移动的是其内部的自由电荷。</p>
+</blockquote>
+<p>使用验电器检验物体带电类型</p>
+<p>使用一个<strong>已知</strong>带电类型的带电体（例如用丝绸摩擦过的玻璃棒或者用毛皮摩擦过的橡胶棒）接触验电器，再使用待测<strong>带电体</strong>接触验电器。</p>
+<p>如果张角不减小而直接增大表明与前一步带电体带同种电荷；如果张角缩小但还未关闭表明与</p>
+<blockquote>
+<p>咕咕咕，逐步完善中</p>
+</blockquote>
 ]]></content>
     </entry>
     <entry>

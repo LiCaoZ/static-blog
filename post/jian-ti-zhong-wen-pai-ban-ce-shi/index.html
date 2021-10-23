@@ -640,7 +640,7 @@ YOUSONOFBITCH”都不能说。<br>
   
   
     
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+      <!--link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script type="application/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <script type="application/javascript">
@@ -657,8 +657,18 @@ YOUSONOFBITCH”都不能说。<br>
 
   gitalk.render('gitalk-container')
 
-</script>
+</script-->
 
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.9/dist/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://twikoo-rosy-three.vercel.app/',
+  el: '#gitalk-container',
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+  // path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/dev/src/js/utils/i18n/index.js
+})
+</script>
     
   
 </body>
