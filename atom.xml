@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>李某人的部落格</title>
+  <icon>https://cdn.jsdelivr.net/gh/shiertx/static/pubicon.png</icon>
+  
+  <link href="https://licaoz.com/atom.xml" rel="self"/>
+  
+  <link href="https://licaoz.com/"/>
+  <updated>2021-12-03T11:29:29.993Z</updated>
+  <id>https://licaoz.com/</id>
+  
+  <author>
+    <name>SHIERTX</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用投诉举报联系方式</title>
+    <link href="https://licaoz.com/post/reports-contact-info/"/>
+    <id>https://licaoz.com/post/reports-contact-info/</id>
+    <published>2021-11-27T21:56:37.000Z</published>
+    <updated>2021-12-03T11:29:29.993Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文摘自知乎答主 &lt;a href=&quot;https://www.zhihu.com/people/Top-Law&quot;&gt;@Firefly&lt;/a&gt; 的 &lt;a href=&quot;https://www.zhihu.com/question/264021021/answer/276915444&quot;&gt;回答&lt;/a&gt;，感谢答主收集~&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一个饮料瓶的“旅行”</title>
+    <link href="https://licaoz.com/post/a-trip-with-a-drink-bottle/"/>
+    <id>https://licaoz.com/post/a-trip-with-a-drink-bottle/</id>
+    <published>2021-11-21T10:34:13.000Z</published>
+    <updated>2021-12-03T11:57:47.023Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​		你好，我是一个饮料瓶，曾经光鲜亮丽地被摆在货架上并拥有着极其高昂的身价。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>新邮箱 &amp; GPG 密钥启用</title>
+    <link href="https://licaoz.com/post/active-new-mailbox/"/>
+    <id>https://licaoz.com/post/active-new-mailbox/</id>
+    <published>2021-11-20T12:05:45.000Z</published>
+    <updated>2021-12-03T11:29:29.985Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;更换了邮箱和 GPG 密钥&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>今天，分享一首歌</title>
+    <link href="https://licaoz.com/post/share-song-20211115/"/>
+    <id>https://licaoz.com/post/share-song-20211115/</id>
+    <published>2021-11-15T12:53:29.000Z</published>
+    <updated>2021-12-03T11:29:29.994Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;我们星辰大海肩并肩 自古英雄出少年 坚定信念 勇往直前 强国有我 好少年&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="强国少年" scheme="https://licaoz.com/tags/%E5%BC%BA%E5%9B%BD%E5%B0%91%E5%B9%B4/"/>
+    
+    <category term="共青团" scheme="https://licaoz.com/tags/%E5%85%B1%E9%9D%92%E5%9B%A2/"/>
+    
+    <category term="少先队" scheme="https://licaoz.com/tags/%E5%B0%91%E5%85%88%E9%98%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>米表</title>
+    <link href="https://licaoz.com/post/mibiao/"/>
+    <id>https://licaoz.com/post/mibiao/</id>
+    <published>2021-11-14T15:28:18.000Z</published>
+    <updated>2021-12-03T11:29:29.989Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天我又买什么垃圾域名了？&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="域名" scheme="https://licaoz.com/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>红米10X 4G版玩机攻略</title>
+    <link href="https://licaoz.com/post/redmi-merlin-play-machine-strategy/"/>
+    <id>https://licaoz.com/post/redmi-merlin-play-machine-strategy/</id>
+    <published>2021-11-11T12:40:50.000Z</published>
+    <updated>2021-12-03T11:29:29.992Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;URL 中的英语是 &lt;a href=&quot;https://translate.google.cn/&quot;&gt;Google 生草机&lt;/a&gt; 的杰作，I don’t think that is right。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Office LTSC 专业增强版 2021 食用指南</title>
+    <link href="https://licaoz.com/post/office-ltsc-pro-plus-2021/"/>
+    <id>https://licaoz.com/post/office-ltsc-pro-plus-2021/</id>
+    <published>2021-11-03T14:21:46.000Z</published>
+    <updated>2021-12-03T11:51:13.906Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;装完 Windows 11 后心血来潮想装一个 Office LTSC 专业增强版 2021，开搞！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Microsoft Office" scheme="https://licaoz.com/categories/Microsoft-Office/"/>
+    
+    
+    <category term="Microsoft Office" scheme="https://licaoz.com/tags/Microsoft-Office/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何用 GPG 加密你的数据&amp;验证身份？</title>
+    <link href="https://licaoz.com/post/gpg-encrypt/"/>
+    <id>https://licaoz.com/post/gpg-encrypt/</id>
+    <published>2021-11-01T14:59:13.000Z</published>
+    <updated>2021-12-03T12:06:50.671Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;一篇 GPG 小白写给未使用过 GPG 的人们的使用指北。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="密码学" scheme="https://licaoz.com/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+    
+    <category term="GPG" scheme="https://licaoz.com/tags/GPG/"/>
+    
+    <category term="密码学" scheme="https://licaoz.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中国科学技术大学第八届信息安全大赛 Write Up</title>
+    <link href="https://licaoz.com/post/hackergame-2021-writeup/"/>
+    <id>https://licaoz.com/post/hackergame-2021-writeup/</id>
+    <published>2021-10-29T15:34:53.000Z</published>
+    <updated>2021-12-03T11:29:29.987Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;呼，居然没有掉出 400 名。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="CTF" scheme="https://licaoz.com/categories/CTF/"/>
+    
+    
+    <category term="Hackergame" scheme="https://licaoz.com/tags/Hackergame/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[置顶]初三化学笔记</title>
+    <link href="https://licaoz.com/post/middle-school-chemistry-notes/"/>
+    <id>https://licaoz.com/post/middle-school-chemistry-notes/</id>
+    <published>2021-10-11T05:28:34.000Z</published>
+    <updated>2021-12-03T11:29:29.989Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;初三化学方程式笔记&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://licaoz.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="化学" scheme="https://licaoz.com/tags/%E5%8C%96%E5%AD%A6/"/>
+    
+    <category term="笔记" scheme="https://licaoz.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初三随笔</title>
+    <link href="https://licaoz.com/post/third-grade-essays/"/>
+    <id>https://licaoz.com/post/third-grade-essays/</id>
+    <published>2021-09-21T06:49:14.000Z</published>
+    <updated>2021-12-03T11:29:29.995Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;How Time Flies!&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="随笔" scheme="https://licaoz.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>初中物理电学笔记</title>
+    <link href="https://licaoz.com/post/middle-school-physics-electrical-notes/"/>
+    <id>https://licaoz.com/post/middle-school-physics-electrical-notes/</id>
+    <published>2021-09-17T06:09:48.000Z</published>
+    <updated>2021-12-03T11:29:29.990Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;部编版初三全一册物理 第十五章 电流和电路 笔记&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://licaoz.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://licaoz.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="物理" scheme="https://licaoz.com/tags/%E7%89%A9%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何完成在微信对公交卡的充值和线下圈存</title>
+    <link href="https://licaoz.com/post/how-to-recharge-bus-card-online/"/>
+    <id>https://licaoz.com/post/how-to-recharge-bus-card-online/</id>
+    <published>2020-08-27T20:31:31.000Z</published>
+    <updated>2021-12-03T11:29:29.988Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;其实合川区的公交卡早就可以线上充值线下圈存了，但貌似很多同志不知道到底如何操作，故写此文。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>

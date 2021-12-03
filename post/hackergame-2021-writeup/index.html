@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>中国科学技术大学第八届信息安全大赛 Write Up - 李某人的部落格</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="李某人的部落格"><meta name="msapplication-TileImage" content="https://cdn.jsdelivr.net/gh/shiertx/static/pubicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="李某人的部落格"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="呼，居然没有掉出 400 名。"><meta property="og:type" content="blog"><meta property="og:title" content="中国科学技术大学第八届信息安全大赛 Write Up"><meta property="og:url" content="https://licaoz.com/post/hackergame-2021-writeup/"><meta property="og:site_name" content="李某人的部落格"><meta property="og:description" content="呼，居然没有掉出 400 名。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xtCvQ.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xGy5T.jpg"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xGgGF.jpg"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xGjsA.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xJeZq.jpg"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xJGLR.jpg"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xYDhT.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2021-writeups/behind-the-scenes/files/1.jpg"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2021-writeups/behind-the-scenes/files/11.jpg"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5ziDot.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5zJVBR.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xBx10.png"><meta property="og:image" content="https://static.liczhi.com/hackergame-2021/hex_editor.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xDx5d.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xIONq.png"><meta property="og:image" content="https://ftp.lug.ustc.edu.cn/wp-content/uploads/2016/06/IMG_20160616_133655_compressed.jpg"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5xH0VH.png"><meta property="og:image" content="https://static.liczhi.com/hackergame-2021/travel-photo.jpg"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5z9uMd.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5z9lZt.png"><meta property="og:image" content="https://z3.ax1x.com/2021/10/30/5zCIns.png"><meta property="article:published_time" content="2021-10-29T15:34:53.000Z"><meta property="article:modified_time" content="2021-12-03T11:29:29.987Z"><meta property="article:author" content="SHIERTX"><meta property="article:tag" content="Hackergame"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://z3.ax1x.com/2021/10/30/5xtCvQ.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://licaoz.com/post/hackergame-2021-writeup/"},"headline":"中国科学技术大学第八届信息安全大赛 Write Up","image":["https://z3.ax1x.com/2021/10/30/5xtCvQ.png","https://z3.ax1x.com/2021/10/30/5xGy5T.jpg","https://z3.ax1x.com/2021/10/30/5xGgGF.jpg","https://z3.ax1x.com/2021/10/30/5xGjsA.png","https://z3.ax1x.com/2021/10/30/5xJeZq.jpg","https://z3.ax1x.com/2021/10/30/5xJGLR.jpg","https://z3.ax1x.com/2021/10/30/5xYDhT.png","https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2021-writeups/behind-the-scenes/files/1.jpg","https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2021-writeups/behind-the-scenes/files/11.jpg","https://z3.ax1x.com/2021/10/30/5ziDot.png","https://z3.ax1x.com/2021/10/30/5zJVBR.png","https://z3.ax1x.com/2021/10/30/5xBx10.png","https://static.liczhi.com/hackergame-2021/hex_editor.png","https://z3.ax1x.com/2021/10/30/5xDx5d.png","https://z3.ax1x.com/2021/10/30/5xIONq.png","https://ftp.lug.ustc.edu.cn/wp-content/uploads/2016/06/IMG_20160616_133655_compressed.jpg","https://z3.ax1x.com/2021/10/30/5xH0VH.png","https://static.liczhi.com/hackergame-2021/travel-photo.jpg","https://z3.ax1x.com/2021/10/30/5z9uMd.png","https://z3.ax1x.com/2021/10/30/5z9lZt.png","https://z3.ax1x.com/2021/10/30/5zCIns.png"],"datePublished":"2021-10-29T15:34:53.000Z","dateModified":"2021-12-03T11:29:29.987Z","author":{"@type":"Person","name":"SHIERTX"},"publisher":{"@type":"Organization","name":"李某人的部落格","logo":{"@type":"ImageObject","url":"https://z3.ax1x.com/2021/10/30/5zm38I.png"}},"description":"呼，居然没有掉出 400 名。"}</script><link rel="canonical" href="https://licaoz.com/post/hackergame-2021-writeup/"><link rel="alternate" href="https://licaoz.com/atom.xml" title="李某人的部落格" type="application/atom+xml"><link rel="icon" href="https://cdn.jsdelivr.net/gh/shiertx/static/pubicon.png"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://z3.ax1x.com/2021/10/30/5zm38I.png" alt="李某人的部落格" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/quotations">语录</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" target="_blank" rel="noopener" href="https://travellings.link/">开往</a><a class="navbar-item" target="_blank" rel="noopener" href="https://www.foreverblog.cn/go.html">虫洞</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-10-29T15:34:53.000Z" title="2021/10/29 下午11:34:53">2021-10-29</time>发表</span><span class="level-item"><time dateTime="2021-12-03T11:29:29.987Z" title="2021/12/3 下午7:29:29">2021-12-03</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/CTF/">CTF</a></span><span class="level-item">24 分钟读完 (大约3544个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">中国科学技术大学第八届信息安全大赛 Write Up</h1><div class="content"><blockquote>
+<p>呼，居然没有掉出 400 名。</p>
+</blockquote>
+<span id="more"></span>
+<p>完结撒花！<a target="_blank" rel="noopener" href="https://hack.lug.ustc.edu.cn/">中国科学技术大学第八届信息安全大赛</a> 正式结束啦。</p>
+<p>排名 371 / 2677 <s>后面的题都不会做 WWW</s></p>
+<p><img src="https://z3.ax1x.com/2021/10/30/5xtCvQ.png" alt=""></p>
+<h2 id="梗整理">梗整理</h2>
+<h3 id="梗图">梗图</h3>
+<p><img src="https://z3.ax1x.com/2021/10/30/5xGy5T.jpg" alt="我是最菜的">  <img src="https://z3.ax1x.com/2021/10/30/5xGgGF.jpg" alt="有 Flag 吗"> <img src="https://z3.ax1x.com/2021/10/30/5xGjsA.png" alt="Fake Flag"> <img src="https://z3.ax1x.com/2021/10/30/5xJeZq.jpg" alt="MC"> <img src="https://z3.ax1x.com/2021/10/30/5xJGLR.jpg" alt="卷怪"> <img src="https://z3.ax1x.com/2021/10/30/5xYDhT.png" alt="中科大少年班学院的神童可以口算 RSA"> <img src="https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2021-writeups/behind-the-scenes/files/1.jpg" alt="信息安全是一门早睡晚起的学科"> <img src="https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2021-writeups/behind-the-scenes/files/11.jpg" alt="UTF8"> <img src="https://z3.ax1x.com/2021/10/30/5ziDot.png" alt="恶意撕毁 Flag"> <img src="https://z3.ax1x.com/2021/10/30/5zJVBR.png" alt="环"></p>
+<h3 id="梗">梗</h3>
+<p>信息安全是一门 早睡早起/晚睡晚起/早睡晚起/一睡不起 的学科<br>
+<a target="_blank" rel="noopener" href="https://github.com/ustclug/hackergame2018-writeups/tree/master/official/RSA_of_Z#%E8%A7%A3%E6%B3%95-1">中科大少年班学院的神童可以口算 RSA</a></p>
+<h2 id="题解">题解</h2>
+<p>题解中部分题目需要使用 Token。Token 可以从比赛平台注册获取，也可以使用 <code>1:MEQCIBY0ubN3BOXYsuRdXzqWIWNf8Jx0Y6giZCSp/Rg8zdNwAiBMZGWaiIGLD33KTfQ5TTLejp9PwGp8Gg4HsJbdo8sVig==</code> 作为测试 Token。</p>
+<p>今年只做出了签到、进制十六——参上、去吧！追寻自由的电波、猫咪问答 Pro Max、卖瓜、旅行照片、FLAG 助力大红包、图之上的信息；<s>千言万语汇成一句话——我好菜啊我好菜啊我好菜啊</s>。</p>
+<h3 id="签到">签到</h3>
+<blockquote>
+<p>为了能让大家顺利签到，命题组把每一秒的 flag 都记录下来制成了日记本的一页。你只需要打开日记，翻到 Hackergame 2021 比赛进行期间的任何一页就能得到 flag！</p>
+<p>提示：完成题目遇到困难？你可以参考 <a target="_blank" rel="noopener" href="https://github.com/ustclug/hackergame2018-writeups/tree/master/official/qiandao">2018 年签到题题解</a>、<a target="_blank" rel="noopener" href="https://github.com/ustclug/hackergame2019-writeups/blob/master/official/%E7%AD%BE%E5%88%B0%E9%A2%98/README.md">2019 年签到题题解</a> 和 <a target="_blank" rel="noopener" href="https://github.com/USTC-Hackergame/hackergame2020-writeups/blob/master/official/%E7%AD%BE%E5%88%B0/README.md">2020 年签到题题解</a>。</p>
+</blockquote>
+<blockquote>
+<p>题目链接 <a target="_blank" rel="noopener" href="http://202.38.93.111:10000">传送门</a></p>
+</blockquote>
+<p>打开题目，<code>1970-01-01 08:00:00 +08:00</code>给人的第一反应就是 <a target="_blank" rel="noopener" href="https://www.bing.com/search?q=UNIX%E6%97%B6%E9%97%B4%E6%88%B3">UNIX 时间戳</a>，别急，点击 Next 后网址带参 <code>/?page=1</code>，时间变为 <code>1970-01-01 08:00:01 +08:00</code>，证明就是 UNIX 时间戳咯。</p>
+<p>随便找一个 <a target="_blank" rel="noopener" href="https://www.bing.com/search?q=UNIX%E6%97%B6%E9%97%B4%E6%88%B3%E8%BD%AC%E6%8D%A2">UNIX 时间戳转换网站</a>，把比赛时间（2021 年 10 月 23 日 中午 12:00 ～ 10 月 30 日 中午 12:00）中任意一天转换成时间戳如 1635177600 并替换 URL 中对应参数即可。</p>
+<p><img src="https://z3.ax1x.com/2021/10/30/5xBx10.png" alt=""></p>
+<p>最后得到 Flag flag{HappyHacking2021-随机字符}</p>
+<h3 id="进制十六——参上">进制十六——参上</h3>
+<blockquote>
+<p>为严防 flag 泄漏以及其他存在于未来所有可能的意外灾难，神通广大的 Z 同学不仅强制要求每一道题目都加上权限和资源的限制，还给所有参与 Hackergame 2021 命题的计算机施加了一层法术结界。任何试图从结界逃逸的 flag 都会被无情抹除。</p>
+<p>而一位明面上是计算机学院的新生，实则为物理学院暗部核心成员的 X 同学，在 Hackergame 2021 命题组已经潜伏多时。妄想趁比赛开始的午时，借阳火正旺之势，冲破 Z 同学的结界，以图片而非明文的形式，将 flag 悄悄传递出来。</p>
+<p>好在 Z 同学法力之深厚，不可管窥蠡测。在 flag 被传出去的前两天，就已预知此事并将图片中的 flag 无声消泯了。</p>
+<p>只是，这位 X 同学，虽然不会退出 Vim，但是似乎对打开十六进制编辑器颇有造诣……</p>
+<p><img src="https://static.liczhi.com/hackergame-2021/hex_editor.png" alt=""></p>
+</blockquote>
+<p>这道题题干通俗易懂，只需 <a target="_blank" rel="noopener" href="https://www.bing.com/search?q=%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%BC%96%E8%BE%91%E5%99%A8">随便找个十六进制编辑器</a> 便可解决。</p>
+<p>照着图片手敲十六进制也行，用 OCR 识别出来后直接粘贴到编辑器中也可。</p>
+<p><img src="https://z3.ax1x.com/2021/10/30/5xDx5d.png" alt=""></p>
+<p>最后得到 Flag flag{Y0U_SH0U1D_kn0w_H0W_t0_C0nv3rt_HEX_to_TexT}</p>
+<h3 id="去吧！追寻自由的电波">去吧！追寻自由的电波</h3>
+<blockquote>
+<p>（前情提要）为了打破 Z 同学布下的结界，X 同学偷偷搬出社团的业余无线电台试图向外界通讯。</p>
+<p>当然，如果只是这样还远远不够。遵依史称 “老爹” 的上古先贤的至理名言，必须要 “用魔法打败魔法”。X 同学向上级申请到了科大西区同步辐射实验室设备的使用权限，以此打通次元空间，借助到另一个平行宇宙中 Z 同学的法力进行数据对冲，方才于乱中搏得一丝机会，将 flag 用无线电的形式发射了出去。</p>
+<p>考虑到信息的鲁棒性，X 同学使用了无线电中惯用的方法来区分字符串中读音相近的字母。即使如此，打破次元的强大能量扭曲了时空，使得最终接受到的录音的速度有所改变。</p>
+<p>为了保障同步辐射设备的持续运转，组织牺牲了大量的能源，甚至以东北部分地区无计划限电为代价，把这份沉甸甸的录音文件送到了你的手上。而刚刚起床没多久，试图抢签到题一血还失败了的你，可以不辜负同学们对你的殷切期望吗？</p>
+<p>注：flag 花括号内只包含小写字母。</p>
+</blockquote>
+<blockquote>
+<p>题目文件 <a target="_blank" rel="noopener" href="https://static.liczhi.com/hackergame-2021/radio.mp3">下载</a></p>
+</blockquote>
+<p>音频文件可自行调整倍速播放或稍微处理一下扔给 <a target="_blank" rel="noopener" href="https://www.iflyrec.com/">讯飞听见</a> 语音转文本。</p>
+<p>然后运用我们在小学二年级学过的无线电知识即可得出 Flag</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字母</th>
+<th style="text-align:center">字母解释法</th>
+<th style="text-align:center">字母</th>
+<th style="text-align:center">字母解释法</th>
+<th style="text-align:center">字母</th>
+<th style="text-align:center">字母解释法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A</td>
+<td style="text-align:center">ALFA</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">BRAVO</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">CHARLIE</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td style="text-align:center">DELTA</td>
+<td style="text-align:center">E</td>
+<td style="text-align:center">ECHO</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">FOXTROT</td>
+</tr>
+<tr>
+<td style="text-align:center">G</td>
+<td style="text-align:center">GOLF</td>
+<td style="text-align:center">H</td>
+<td style="text-align:center">HOTEL</td>
+<td style="text-align:center">I</td>
+<td style="text-align:center">INDIA</td>
+</tr>
+<tr>
+<td style="text-align:center">J</td>
+<td style="text-align:center">JULIET</td>
+<td style="text-align:center">K</td>
+<td style="text-align:center">KILO</td>
+<td style="text-align:center">L</td>
+<td style="text-align:center">LIMA</td>
+</tr>
+<tr>
+<td style="text-align:center">M</td>
+<td style="text-align:center">MIKE</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">NOREMBER</td>
+<td style="text-align:center">O</td>
+<td style="text-align:center">OSCAR</td>
+</tr>
+<tr>
+<td style="text-align:center">P</td>
+<td style="text-align:center">PAPA</td>
+<td style="text-align:center">Q</td>
+<td style="text-align:center">QUEBEC</td>
+<td style="text-align:center">R</td>
+<td style="text-align:center">ROMEO</td>
+</tr>
+<tr>
+<td style="text-align:center">S</td>
+<td style="text-align:center">SIERRA</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">TANGO</td>
+<td style="text-align:center">U</td>
+<td style="text-align:center">UNIFORM</td>
+</tr>
+<tr>
+<td style="text-align:center">V</td>
+<td style="text-align:center">VICTOR</td>
+<td style="text-align:center">W</td>
+<td style="text-align:center">WHISKEY</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">WHISKEY</td>
+</tr>
+<tr>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">YANKEE</td>
+<td style="text-align:center">Z</td>
+<td style="text-align:center">ZULO</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>最后得出 Flag flag{phoneticab}</p>
+<h3 id="猫咪问答-Pro-Max">猫咪问答 Pro Max</h3>
+<blockquote>
+<p>我猛然一看，就猛然看到这个猫咪问答，我直呼我直呼，上次看到这么这么的发言还是上次，这问答属于是典型的典型了，我之前还没发现，当我发现的时候我已经发现了，这问答就像一个问答，问答的内容充满了内容，我不禁感慨了一句感慨：希望下次看到这么这么的猫咪问答是下次。</p>
+<p>提示：<strong>解出谜题不需要是科大在校学生</strong>。解题遇到困难？你可以参考 <a target="_blank" rel="noopener" href="https://github.com/ustclug/hackergame2018-writeups/blob/master/official/ustcquiz/README.md">2018 年猫咪问答题解</a> 和 <a target="_blank" rel="noopener" href="https://github.com/USTC-Hackergame/hackergame2020-writeups/blob/master/official/%E7%8C%AB%E5%92%AA%E9%97%AE%E7%AD%94++/README.md">2020 年猫咪问答 ++</a> 题解。</p>
+</blockquote>
+<blockquote>
+<p>题目链接 <a target="_blank" rel="noopener" href="http://202.38.93.111:10001">传送门</a></p>
+</blockquote>
+<p>2017 年，中科大信息安全俱乐部（SEC@USTC）并入中科大 Linux 用户协会（USTCLUG）。目前，信息安全俱乐部的域名（<a target="_blank" rel="noopener" href="http://sec.ustc.edu.cn">sec.ustc.edu.cn</a>）已经无法访问，但你能找到信息安全俱乐部的社团章程在哪一天的会员代表大会上通过的吗？</p>
+<p>去 <a target="_blank" rel="noopener" href="https://web.archive.org">互联网博物馆</a> 输入信安俱乐部官网查看章程记录即可。</p>
+<p><img src="https://z3.ax1x.com/2021/10/30/5xIONq.png" alt=""></p>
+<p>所以答案是 20150504</p>
+<p>中国科学技术大学 Linux 用户协会在近五年多少次被评为校五星级社团？</p>
+<p>这问有选手 <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/494178119">面向知乎编程</a>，实际上 <a target="_blank" rel="noopener" href="https://lug.ustc.edu.cn/wiki/intro/">LUG 官网</a> 就有～</p>
+<blockquote>
+<p>为了表彰其出色表现，协会于 2011 年 5 月被评为中国科学技术大学优秀学生社团，于 2012 年 5 月、2013 年 5 月及 2014 年 5 月分别被评为中国科学技术大学四星级学生社团，并于 2015 年 5 月、2017 年 7 月、2018 年 9 月、2019 年 8 月、2020 年 9 月及 2021 年 9 月被评为中国科学技术大学五星级学生社团。</p>
+</blockquote>
+<p>记得题干问的是<strong>近五年</strong>，所以答案是 5</p>
+<p>中国科学技术大学 Linux 用户协会位于西区图书馆的活动室门口的牌子上 “LUG @ USTC” 下方的小字是？</p>
+<p>在 <a target="_blank" rel="noopener" href="https://lug.ustc.edu.cn/news/2016/06/new-activity-room-in-west-library/">LUG NEWS</a> 中即可找到图片——</p>
+<p><img src="https://ftp.lug.ustc.edu.cn/wp-content/uploads/2016/06/IMG_20160616_133655_compressed.jpg" alt=""></p>
+<p>结合提示 正确答案的长度为 27，注意大小写 得出答案为 Development Team of Library</p>
+<p>在 SIGBOVIK 2021 的一篇关于二进制 Newcomb-Benford 定律的论文中，作者一共展示了多少个数据集对其理论结果进行验证？</p>
+<p>在搜索引擎上 <a target="_blank" rel="noopener" href="https://cn.bing.com/search?q=SIGBOVIK+2021+Newcomb-Benford">搜索</a> 可得到 <a target="_blank" rel="noopener" href="http://sigbovik.org/2021/proceedings.pdf">这个 PDF</a></p>
+<p>搜索 Newcomb-Benford 定位到论文，数一下图片可得出答案为 13</p>
+<p>不严格遵循协议规范的操作着实令人生厌，好在 IETF 于 2021 年成立了 Protocol Police 以监督并惩戒所有违背 RFC 文档的行为个体。假如你发现了某位同学可能违反了协议规范，根据 Protocol Police 相关文档中规定的举报方法，你应该将你的举报信发往何处？</p>
+<p>稍微搜索一下，搜到了 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%83%A1%E6%90%9ERFC">这个 Wiki 词条</a>；</p>
+<p>在 <a target="_blank" rel="noopener" href="https://datatracker.ietf.org/doc/html/rfc8962#section-6">这里</a> 即可找到答案</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6.  Reporting Offenses  </span><br><span class="line">Send all your reports of possible violations and all tips about wrongdoing to /dev/null.  The Protocol Police are listening and will take care of it.</span><br></pre></td></tr></table></figure>
+<p>点击提交，得到 Flag</p>
+<h3 id="卖瓜">卖瓜</h3>
+<blockquote>
+<p>题目地址 <a target="_blank" rel="noopener" href="http://202.38.93.111:15003/">传送门</a></p>
+</blockquote>
+<p>本题考查 溢出 相关知识。</p>
+<p>首先把这台反重力电子秤搞出一个负数</p>
+<p><img src="https://z3.ax1x.com/2021/10/30/5xH0VH.png" alt=""></p>
+<p>然后小心翼翼地加回正 20 ……</p>
+<p>然后得到 Flag flag{HUAQIANG!HUAQIANG!_随机字符}</p>
+<h3 id="旅行照片">旅行照片</h3>
+<blockquote>
+<p>你的学长决定来一场说走就走的旅行。通过他发给你的照片来看，他应该是在酒店住下了。<br>
+<img src="https://static.liczhi.com/hackergame-2021/travel-photo.jpg" alt=""><br>
+从照片来看，酒店似乎在小区的一栋高楼里，附近还有一家 KFC 分店。突然，你意识到照片里透露出来的信息比表面上看起来的要多。<br>
+请观察照片并答对全部 5 道题以获取 flag。注意：图片未在其他地方公开发布过，也未采取任何隐写措施（通过手机拍摄屏幕亦可答题）。</p>
+</blockquote>
+<blockquote>
+<p>题目地址 <a target="_blank" rel="noopener" href="http://202.38.93.111:10055/">传送门</a></p>
+</blockquote>
+<p>嗯？题目里为何强调 KFC？蓝色的 KFC？<a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=%E8%93%9D%E8%89%B2KFC">百度一下</a>，确定目标——<a target="_blank" rel="noopener" href="https://www.dianping.com/shop/iy9OMcwOdjo1SoEq">肯德基甜品站 (新澳海底世界店)</a>（记住这个大众点评，待会还要用到）</p>
+<p>然后即可通过地图软件确定方位、通过工商系统确定电话、通过影子确定时间、通过 <a target="_blank" rel="noopener" href="https://github.com/USTC-Hackergame/hackergame2021-writeups/tree/master/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87#%E7%AC%AC%E4%B8%89%E9%A2%98">某</a> 方法判断楼层高度。</p>
+<p>最后得出 Flag 为 flag{D0n7-5hare-ph0t05-ca5ua11y} ，不要经常分享图片。</p>
+<blockquote>
+<p>出题人：主要是在提醒各位不要随随便便发自己的照片（Don’t share photos casually）——否则被人扒个底裤都不剩也只是分分钟的事。</p>
+</blockquote>
+<h3 id="FLAG-助力大红包">FLAG 助力大红包</h3>
+<blockquote>
+<p>“听说没？【大砍刀】平台又双叒做活动啦！参与活动就送 0.5 个 flag 呢，攒满 1 个 flag 即可免费提取！”</p>
+<p>“还有这么好的事情？我也要参加！”</p>
+<p>“快点吧！我已经拿到 flag 了呢！再不参加 flag 就要发完了呢。”</p>
+<p>“那怎么才能参加呢？”</p>
+<p>“这还不简单！点击下面的链接就行”</p>
+</blockquote>
+<blockquote>
+<p>题目链接 <a target="_blank" rel="noopener" href="http://202.38.93.111:10888">传送门</a></p>
+</blockquote>
+<p>看到题目时我直接打开了我的 <a target="_blank" rel="noopener" href="https://portswigger.net/burp/releases/professional-community-2021-9-1">Burp Suite</a>，设置代理抓包发送到 Intruder 一气呵成。</p>
+<p>前端判定 IP 传送了个明文的 IP，后端判定 IP 估计使用了最常见的 <code>X-Forwardrd-For</code> ，一试果然是。</p>
+<p>不过我干了件特 聪 bai 明 chi 的事情，我的 Payloads List 是手写的从 0.0.0.0 到 255.x.x.x</p>
+<p>文件可以在 <a target="_blank" rel="noopener" href="https://static.liczhi.com/hackergame-2021/wp/ip.txt">这里</a> 看到。</p>
+<p>之前没限制频率的时候总是返回长度 2335（频繁）还很慢，限制为 1200 毫秒就差不多啦。</p>
+<p>一共 256 条 IP，提交完还剩好几分钟。</p>
+<p><img src="https://z3.ax1x.com/2021/10/30/5z9uMd.png" alt=""></p>
+<p><img src="https://z3.ax1x.com/2021/10/30/5z9lZt.png" alt=""></p>
+<p>然后立即提现即可，Flag 为 flag{r3d-enve10p3-随机字符}</p>
+<h3 id="图之上的信息">图之上的信息</h3>
+<blockquote>
+<p>小 T 听说 GraphQL 是一种特别的 API 设计模式，也是 RESTful API 的有力竞争者，所以他写了个小网站来实验这项技术。</p>
+<p>你能通过这个全新的接口，获取到没有公开出来的管理员的邮箱地址吗？</p>
+</blockquote>
+<blockquote>
+<p>题目地址 <a target="_blank" rel="noopener" href="http://202.38.93.111:15001">http://202.38.93.111:15001</a></p>
+</blockquote>
+<p><img src="https://z3.ax1x.com/2021/10/30/5zCIns.png" alt=""></p>
+<p>Burp 抓包发现查询指令是明文传输的，运用搜到的命令瞎拼乱凑出来一个查询 UserID 为 1 的用户的 privateEmail 的指令即可得到 Flag</p>
+<p>本题无复现。</p>
+<h3 id="其他题目">其他题目</h3>
+<p>请参考 <a target="_blank" rel="noopener" href="https://github.com/USTC-Hackergame/hackergame2021-writeups/tree/master/official">官方题解</a></p>
+<hr>
+<h2 id="最后">最后</h2>
+<p>好玩！明年见～</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>中国科学技术大学第八届信息安全大赛 Write Up</p><p><a href="https://licaoz.com/post/hackergame-2021-writeup/">https://licaoz.com/post/hackergame-2021-writeup/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>SHIERTX</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-10-29</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-12-03</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Hackergame/">Hackergame</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" href="https://afdian.net/@shiertx" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>爱发电</span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/post/gpg-encrypt/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">如何用 GPG 加密你的数据&amp;验证身份？</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/post/middle-school-chemistry-notes/"><span class="level-item">[置顶]初三化学笔记</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><script src="https://utteranc.es/client.js" repo="SHIERTX/static-blog" issue-term="pathname" crossorigin="anonymous" async></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-27T21:56:37.000Z">2021-11-28</time></p><p class="title"><a href="/post/reports-contact-info/">常用投诉举报联系方式</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-21T10:34:13.000Z">2021-11-21</time></p><p class="title"><a href="/post/a-trip-with-a-drink-bottle/">一个饮料瓶的“旅行”</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-20T12:05:45.000Z">2021-11-20</time></p><p class="title"><a href="/post/active-new-mailbox/">新邮箱 &amp; GPG 密钥启用</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-15T12:53:29.000Z">2021-11-15</time></p><p class="title"><a href="/post/share-song-20211115/">今天，分享一首歌</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-14T15:28:18.000Z">2021-11-14</time></p><p class="title"><a href="/post/mibiao/">米表</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">十一月 2021</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">十月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/08/"><span class="level-start"><span class="level-item">八月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/CTF/"><span class="level-start"><span class="level-item">CTF</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Microsoft-Office/"><span class="level-start"><span class="level-item">Microsoft Office</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/"><span class="level-start"><span class="level-item">密码学</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%AC%94%E8%AE%B0/"><span class="level-start"><span class="level-item">笔记</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="level-start"><span class="level-item">随笔</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/GPG/"><span class="tag">GPG</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hackergame/"><span class="tag">Hackergame</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Microsoft-Office/"><span class="tag">Microsoft Office</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%85%B1%E9%9D%92%E5%9B%A2/"><span class="tag">共青团</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8C%96%E5%AD%A6/"><span class="tag">化学</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%9F%9F%E5%90%8D/"><span class="tag">域名</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"><span class="tag">密码学</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B0%91%E5%85%88%E9%98%9F/"><span class="tag">少先队</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BC%BA%E5%9B%BD%E5%B0%91%E5%B9%B4/"><span class="tag">强国少年</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%89%A9%E7%90%86/"><span class="tag">物理</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AC%94%E8%AE%B0/"><span class="tag">笔记</span><span class="tag">2</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#梗整理"><span class="level-left"><span class="level-item">梗整理</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#梗图"><span class="level-left"><span class="level-item">梗图</span></span></a></li><li><a class="level is-mobile" href="#梗"><span class="level-left"><span class="level-item">梗</span></span></a></li></ul></li><li><a class="level is-mobile" href="#题解"><span class="level-left"><span class="level-item">题解</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#签到"><span class="level-left"><span class="level-item">签到</span></span></a></li><li><a class="level is-mobile" href="#进制十六——参上"><span class="level-left"><span class="level-item">进制十六——参上</span></span></a></li><li><a class="level is-mobile" href="#去吧！追寻自由的电波"><span class="level-left"><span class="level-item">去吧！追寻自由的电波</span></span></a></li><li><a class="level is-mobile" href="#猫咪问答-Pro-Max"><span class="level-left"><span class="level-item">猫咪问答 Pro Max</span></span></a></li><li><a class="level is-mobile" href="#卖瓜"><span class="level-left"><span class="level-item">卖瓜</span></span></a></li><li><a class="level is-mobile" href="#旅行照片"><span class="level-left"><span class="level-item">旅行照片</span></span></a></li><li><a class="level is-mobile" href="#FLAG-助力大红包"><span class="level-left"><span class="level-item">FLAG 助力大红包</span></span></a></li><li><a class="level is-mobile" href="#图之上的信息"><span class="level-left"><span class="level-item">图之上的信息</span></span></a></li><li><a class="level is-mobile" href="#其他题目"><span class="level-left"><span class="level-item">其他题目</span></span></a></li></ul></li><li><a class="level is-mobile" href="#最后"><span class="level-left"><span class="level-item">最后</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://z3.ax1x.com/2021/10/30/5zm38I.png" alt="李某人的部落格" height="28"></a><p class="is-size-7"><span>&copy; 2021 李某人的部落格</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><div style="font-size: 0.85rem"><span id="timeDate"></span><span id="times"></span><script src="/js/duration.js"></script></div><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
