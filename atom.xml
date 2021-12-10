@@ -6,7 +6,7 @@
   <link href="https://licaoz.com/atom.xml" rel="self"/>
   
   <link href="https://licaoz.com/"/>
-  <updated>2021-12-08T16:41:44.249Z</updated>
+  <updated>2021-12-09T13:03:33.275Z</updated>
   <id>https://licaoz.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>乔治小站 API 服务</title>
+    <link href="https://licaoz.com/post/api-server/"/>
+    <id>https://licaoz.com/post/api-server/</id>
+    <published>2021-12-09T12:10:23.000Z</published>
+    <updated>2021-12-09T13:03:33.275Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本站提供了一些或许会用到的 API 服务。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>[维护]评论系统关闭</title>
