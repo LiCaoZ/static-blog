@@ -6,7 +6,7 @@
   <link href="https://licaoz.com/atom.xml" rel="self"/>
   
   <link href="https://licaoz.com/"/>
-  <updated>2021-12-09T13:03:33.275Z</updated>
+  <updated>2021-12-10T15:13:16.846Z</updated>
   <id>https://licaoz.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[转载]当博客已不再流行，我们该何去何从</title>
+    <link href="https://licaoz.com/post/where-do-we-go-when-blogging-is-no-longer-popular/"/>
+    <id>https://licaoz.com/post/where-do-we-go-when-blogging-is-no-longer-popular/</id>
+    <published>2021-12-10T14:47:51.000Z</published>
+    <updated>2021-12-10T15:13:16.846Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;前排提示：文章仅代表个人观点，如与您观点违背，还请包涵，希望每一位点进这篇文章的访客，都能仔细看完它。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>乔治小站 API 服务</title>
