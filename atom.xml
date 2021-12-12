@@ -6,7 +6,7 @@
   <link href="https://licaoz.com/atom.xml" rel="self"/>
   
   <link href="https://licaoz.com/"/>
-  <updated>2021-12-10T15:30:46.496Z</updated>
+  <updated>2021-12-12T10:33:34.827Z</updated>
   <id>https://licaoz.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>互联网冲浪新人避坑指南</title>
+    <link href="https://licaoz.com/post/guide-to-avoiding-pits-for-internet-surfing-newcomers/"/>
+    <id>https://licaoz.com/post/guide-to-avoiding-pits-for-internet-surfing-newcomers/</id>
+    <published>2021-12-12T09:37:08.000Z</published>
+    <updated>2021-12-12T10:33:34.827Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这几年看到了许多新手的离谱操作，貌似还没有查到专门的文章/教程指导如何避坑，那我就来开个头吧。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="互联网" scheme="https://licaoz.com/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>[转载]当博客已不再流行，我们该何去何从</title>
@@ -245,9 +262,9 @@
     <category term="笔记" scheme="https://licaoz.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="化学" scheme="https://licaoz.com/tags/%E5%8C%96%E5%AD%A6/"/>
-    
     <category term="笔记" scheme="https://licaoz.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="化学" scheme="https://licaoz.com/tags/%E5%8C%96%E5%AD%A6/"/>
     
   </entry>
   
@@ -283,9 +300,9 @@
     <category term="笔记" scheme="https://licaoz.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="https://licaoz.com/tags/%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="物理" scheme="https://licaoz.com/tags/%E7%89%A9%E7%90%86/"/>
+    
+    <category term="笔记" scheme="https://licaoz.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
